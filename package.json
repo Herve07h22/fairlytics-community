@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/webapp",
+    "packages/cli"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "yarn workspaces run test",
+    "restore": "yarn workspace @fairlytics/cli run restore",
+    "backup": "yarn workspace @fairlytics/cli run backup",
+    "dev": "yarn workspace @fairlytics/webapp run dev"
+  }
+}

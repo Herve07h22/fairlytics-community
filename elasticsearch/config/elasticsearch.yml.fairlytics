@@ -1,0 +1,4 @@
+
+network.host: "elasticsearch"
+
+http.publish_host: "elasticsearch"

@@ -1,0 +1,95 @@
+{
+  "mappings": {
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "device": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "fairlyticskey": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "geoip": {
+        "properties": {
+          "country_name": {
+            "type": "keyword",
+            "ignore_above": 512
+          },
+          "location": {
+            "type": "geo_point"
+          },
+          "region_name": {
+            "type": "keyword",
+            "ignore_above": 512
+          }
+        }
+      },
+      "hostname": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "href": {
+        "type": "keyword",
+        "ignore_above": 512
+      },
+      "name": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "os": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "page": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 512
+          }
+        }
+      },
+      "referrer": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 512
+          }
+        }
+      },
+      "unique_visitor": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "session": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "utm": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 512
+          }
+        }
+      },
+      "utm_campaign": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "utm_medium": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "utm_source": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  }
+}

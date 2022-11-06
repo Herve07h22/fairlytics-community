@@ -1,0 +1,4 @@
+{
+  "query": { "range": { "@timestamp": { "gte": "now-90d" } } },
+  "sort": [{ "@timestamp": { "order": "desc" } }]
+}

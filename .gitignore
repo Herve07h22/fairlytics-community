@@ -1,0 +1,11 @@
+*.crt
+elasticsearch.yml
+.env
+.DS_Store
+**/backups/*.json
+node_modules
+nginx/nginx.conf.lemien
+certificats
+elasticsearch/certs/*
+db/*
+test.db

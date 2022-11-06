@@ -1,0 +1,20 @@
+{
+  "name": "@fairlytics/cli",
+  "version": "1.0.0",
+  "description": "Fairlytics tools",
+  "author": "Herve07h22",
+  "private": true,
+  "dependencies": {
+    "elasticdump": "^6.82.3"
+  },
+  "scripts": {
+    "test": "echo \"No test specified for this package\" ",
+    "backup": "dotenv cross-var \"elasticdump --overwrite --limit 1000 --input=%ELASTIC_URL_FROM% --output=./backups/fairlytics.json --type=data --searchBody=@./searchbody.json\"",
+    "backup-and-transform": "dotenv cross-var \"elasticdump --overwrite --limit 1000 --input=%ELASTIC_URL_FROM% --transform='@./conversion-transform' --output=./backups/fairlytics.json --type=data --searchBody=@./searchbody.json\"",
+    "restore": "dotenv cross-var \"elasticdump --limit 1000 --input=./backups/fairlytics.json --output=%ELASTIC_URL_TO% --type=data --output-ca=%ELASTIC_CERT_PATH%\""
+  },
+  "devDependencies": {
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^5.1.0"
+  }
+}

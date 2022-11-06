@@ -1,0 +1,3526 @@
+{
+  "value": {
+    "hotes": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "www.projectxparis.com",
+          "doc_count": 227652,
+          "pages": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 104122,
+            "buckets": [
+              {
+                "key": "/fr/",
+                "doc_count": 32951,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 5841,
+                  "buckets": [
+                    { "key": "https://www.google.com/", "doc_count": 10742 },
+                    { "key": "https://www.google.fr/", "doc_count": 5044 },
+                    { "key": "", "doc_count": 4516 },
+                    { "key": "https://www.tiktok.com/", "doc_count": 2885 },
+                    { "key": "https://linktr.ee/", "doc_count": 1480 },
+                    {
+                      "key": "https://operation.projectxparis.com/",
+                      "doc_count": 1079
+                    },
+                    { "key": "https://www.bing.com/", "doc_count": 433 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 331
+                    },
+                    { "key": "https://www.google.be/", "doc_count": 303 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 295
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/151-streetwear-homme.html",
+                "doc_count": 11514,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 5653,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 3757
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 896
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 547
+                    },
+                    { "key": "", "doc_count": 165 },
+                    { "key": "https://www.google.com/", "doc_count": 160 },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 87
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 75
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/13-jeans",
+                      "doc_count": 69
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 53
+                    },
+                    { "key": "https://www.google.fr/", "doc_count": 52 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/41-survetement-et-jogging",
+                "doc_count": 7740,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 2283,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 2599
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 845 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 627
+                    },
+                    { "key": "https://www.google.fr/", "doc_count": 526 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 457
+                    },
+                    { "key": "", "doc_count": 162 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 69
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 63
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 58
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 51
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/commande",
+                "doc_count": 7252,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 2698,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 3675
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/panier?action=show",
+                      "doc_count": 310
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 191
+                    },
+                    { "key": "", "doc_count": 116 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes",
+                      "doc_count": 70
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 52
+                    },
+                    { "key": "https://secure.payplug.com/", "doc_count": 45 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande?step=3&embedded=1&def=0&modulename=payplug",
+                      "doc_count": 40
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande?id_address=0",
+                      "doc_count": 29
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande?updatedTransaction=1",
+                      "doc_count": 26
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/38-sweats-hoodies",
+                "doc_count": 5731,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 1301,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 3178
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 522
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 219
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 196 },
+                    { "key": "", "doc_count": 148 },
+                    { "key": "https://www.google.fr/", "doc_count": 83 },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 29
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/12-tee-shirts",
+                      "doc_count": 22
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 18
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?gclid=CjwKCAjwg5uZBhATEiwAhhRLHj1GRY_5VrWFAB-UGd6ccpSsYE7vSkb4FeqyWNMHDgAPuXlOjxKUbxoCNdQQAvD_BwE",
+                      "doc_count": 15
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/recherche",
+                "doc_count": 5650,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 2736,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/132-capsules-project-x-paris.html",
+                      "doc_count": 962
+                    },
+                    { "key": "", "doc_count": 794 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 434
+                    },
+                    { "key": "http://instagram.com/", "doc_count": 195 },
+                    {
+                      "key": "https://imasdk.googleapis.com/",
+                      "doc_count": 120
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 88
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?controller=search&s=",
+                      "doc_count": 83
+                    },
+                    { "key": "https://www.tiktok.com/", "doc_count": 83 },
+                    { "key": "https://l.facebook.com/", "doc_count": 82 },
+                    { "key": "http://m.facebook.com/", "doc_count": 73 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/152-categorie-femme.html",
+                "doc_count": 4576,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 2189,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 1481
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 544
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 111
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/63-blousons-vestes",
+                      "doc_count": 44
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 43 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                      "doc_count": 41
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 34
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/59-sweats-hoodies",
+                      "doc_count": 33
+                    },
+                    { "key": "", "doc_count": 31 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/64-bombers",
+                      "doc_count": 25
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/connexion",
+                "doc_count": 3029,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 982,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/138-programme-de-fidelite.html",
+                      "doc_count": 827
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=my-account",
+                      "doc_count": 495
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 299
+                    },
+                    { "key": "", "doc_count": 127 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion",
+                      "doc_count": 93
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/mon-compte",
+                      "doc_count": 51
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=zerosixaccount",
+                      "doc_count": 47
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?create_account=1",
+                      "doc_count": 42
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes",
+                      "doc_count": 37
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recuperation-mot-de-passe",
+                      "doc_count": 29
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/13-jeans",
+                "doc_count": 2973,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 905,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 1401
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 182
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 143 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/13-jeans",
+                      "doc_count": 120
+                    },
+                    { "key": "", "doc_count": 82 },
+                    { "key": "https://www.google.fr/", "doc_count": 79 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 15
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/50-pantalons",
+                      "doc_count": 15
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/jeans/4177-31531-t229002.html",
+                      "doc_count": 14
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/91-blousons-vestes",
+                "doc_count": 2527,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 767,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 994
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 389
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/91-blousons-vestes",
+                      "doc_count": 93
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 70 },
+                    { "key": "", "doc_count": 69 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 39
+                    },
+                    { "key": "https://www.google.fr/", "doc_count": 29 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 29
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 28
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/84-manteaux-parkas",
+                      "doc_count": 20
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/66-survetement-femme",
+                "doc_count": 2503,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 617,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 1348
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 160
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                      "doc_count": 110
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 72 },
+                    { "key": "https://www.google.fr/", "doc_count": 49 },
+                    { "key": "", "doc_count": 46 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 29
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 29
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 25
+                    },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 18 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/120-outlet",
+                "doc_count": 2489,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 223,
+                  "buckets": [
+                    {
+                      "key": "https://operation.projectxparis.com/",
+                      "doc_count": 1758
+                    },
+                    { "key": "", "doc_count": 215 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet",
+                      "doc_count": 174
+                    },
+                    {
+                      "key": "https://operation.projectxparis.com/zn/outlet-pxp",
+                      "doc_count": 59
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 12
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet?femme=dernieres-pieces",
+                      "doc_count": 12
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet?homme=dernieres-pieces&taille=xxl&order=product.sales.desc",
+                      "doc_count": 12
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet?homme=bas-de-jogging",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet?page=10",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet?taille=34,36,s",
+                      "doc_count": 8
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/37-homme",
+                "doc_count": 2368,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 719,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 545
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 275 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 266
+                    },
+                    { "key": "", "doc_count": 198 },
+                    { "key": "https://www.google.fr/", "doc_count": 118 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/37-homme",
+                      "doc_count": 111
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/37-homme?order=product.date_add.desc",
+                      "doc_count": 82
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/15-shop-my-instagram.html",
+                      "doc_count": 19
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 18
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?gclid=Cj0KCQjwl92XBhC7ARIsAHLl9akqpqKKnfhr9FZIi_oHHDUbMjSmRV5KRTjUjwgm-XQCwXpo0wa7BVoaAkn1EALw_wcB",
+                      "doc_count": 17
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/12-tee-shirts",
+                "doc_count": 2178,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 765,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 718
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 359
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/12-tee-shirts",
+                      "doc_count": 91
+                    },
+                    { "key": "", "doc_count": 80 },
+                    { "key": "https://www.google.com/", "doc_count": 64 },
+                    { "key": "https://www.google.fr/", "doc_count": 31 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 28
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 15
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/13-jeans",
+                      "doc_count": 14
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/109-accessoires",
+                      "doc_count": 13
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/59-sweats-hoodies",
+                "doc_count": 1866,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 549,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 960
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 186
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/59-sweats-hoodies",
+                      "doc_count": 48
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 31
+                    },
+                    { "key": "", "doc_count": 26 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/56-top-et-tee-shirt-femme",
+                      "doc_count": 21
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 14
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 11
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/62-robes",
+                      "doc_count": 11
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/132-capsules-project-x-paris.html",
+                      "doc_count": 9
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/historique-commandes",
+                "doc_count": 1709,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 148,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/mon-compte",
+                      "doc_count": 764
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes",
+                      "doc_count": 313
+                    },
+                    { "key": "", "doc_count": 117 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/identite",
+                      "doc_count": 98
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes?utm_source=prestashop&utm_medium=email&utm_campaign=mailtransac",
+                      "doc_count": 56
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/module/zerosix/account",
+                      "doc_count": 54
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/adresses",
+                      "doc_count": 45
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=history",
+                      "doc_count": 44
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/reduction",
+                      "doc_count": 41
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/mon-compte?utm_source=prestashop&utm_medium=email&utm_campaign=mailtransac",
+                      "doc_count": 29
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/mon-compte",
+                "doc_count": 1606,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 679,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=my-account",
+                      "doc_count": 344
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 290
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/138-programme-de-fidelite.html",
+                      "doc_count": 87
+                    },
+                    { "key": "", "doc_count": 71 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 31
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/panier?action=show",
+                      "doc_count": 28
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/mon-compte",
+                      "doc_count": 22
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/identite",
+                      "doc_count": 19
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/panier",
+                      "doc_count": 18
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/nous-contacter",
+                      "doc_count": 17
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/pulls/862-23906-hoodie-avec-broderie-logo-homme-1920010.html",
+                "doc_count": 1521,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 47,
+                  "buckets": [
+                    { "key": "https://www.google.com/", "doc_count": 683 },
+                    { "key": "https://www.google.fr/", "doc_count": 617 },
+                    { "key": "", "doc_count": 96 },
+                    { "key": "https://www.google.fr", "doc_count": 29 },
+                    { "key": "https://www.google.com", "doc_count": 15 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 11
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/28-pulls",
+                      "doc_count": 7
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 6
+                    },
+                    { "key": "http://m.facebook.com/", "doc_count": 5 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 5
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/22-bas-de-jogging",
+                "doc_count": 1511,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 302,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 808
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 96 },
+                    { "key": "", "doc_count": 87 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/22-bas-de-jogging",
+                      "doc_count": 49
+                    },
+                    { "key": "https://www.google.fr/", "doc_count": 48 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 47
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 32
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 15
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 14
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/13-jeans",
+                      "doc_count": 13
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/panier",
+                "doc_count": 1066,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 182,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 266
+                    },
+                    { "key": "", "doc_count": 218 },
+                    { "key": "https://accounts.google.com/", "doc_count": 179 },
+                    { "key": "https://m.facebook.com/", "doc_count": 96 },
+                    {
+                      "key": "https://na.account.amazon.com/",
+                      "doc_count": 42
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/",
+                      "doc_count": 24
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes",
+                      "doc_count": 16
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/sweats-col-rond/3957-28788-2120233.html",
+                      "doc_count": 16
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/panier?action=show",
+                      "doc_count": 9
+                    },
+                    {
+                      "key": "android-app://com.google.android.gm/",
+                      "doc_count": 6
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/bas-de-jogging/3661-29671-2140150.html",
+                "doc_count": 1010,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 10,
+                  "buckets": [
+                    { "key": "https://www.google.fr/", "doc_count": 550 },
+                    { "key": "https://www.google.com/", "doc_count": 367 },
+                    { "key": "", "doc_count": 46 },
+                    { "key": "https://www.google.fr", "doc_count": 20 },
+                    { "key": "https://www.google.com", "doc_count": 7 },
+                    { "key": "https://www.google.ch/", "doc_count": 3 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/pulls/862-29032-hoodie-avec-broderie-logo-homme-1920010.html",
+                      "doc_count": 3
+                    },
+                    { "key": "https://www.google.de/", "doc_count": 2 },
+                    { "key": "https://l.facebook.com/", "doc_count": 1 },
+                    { "key": "https://lm.facebook.com/", "doc_count": 1 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/72-bas-de-jogging",
+                "doc_count": 963,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 191,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 626
+                    },
+                    { "key": "", "doc_count": 42 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 31
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/72-bas-de-jogging",
+                      "doc_count": 27
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                      "doc_count": 15
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/59-sweats-hoodies",
+                      "doc_count": 7
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 6
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 5 },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 5 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/132-capsules-project-x-paris.html",
+                "doc_count": 952,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 478,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 338
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 31
+                    },
+                    { "key": "", "doc_count": 26 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 19
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/132-capsules-project-x-paris.html",
+                      "doc_count": 16
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/109-accessoires",
+                      "doc_count": 7
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/233-claquettes-et-chaussettes",
+                      "doc_count": 7
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 7
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/110-sacs-sacoches",
+                      "doc_count": 6
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/63-blousons-vestes",
+                "doc_count": 922,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 161,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 585
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 55
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/63-blousons-vestes?page=2",
+                      "doc_count": 36
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/63-blousons-vestes",
+                      "doc_count": 30
+                    },
+                    { "key": "", "doc_count": 28 },
+                    { "key": "https://www.google.com/", "doc_count": 6 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                      "doc_count": 6
+                    },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 5 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/67-manteaux-parkas",
+                      "doc_count": 5
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/72-bas-de-jogging",
+                      "doc_count": 5
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/109-accessoires",
+                "doc_count": 911,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 243,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 222
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/109-accessoires?order=product.date_add.desc",
+                      "doc_count": 113
+                    },
+                    { "key": "", "doc_count": 81 },
+                    { "key": "https://www.google.com/", "doc_count": 61 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 57
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 52
+                    },
+                    { "key": "https://www.google.fr/", "doc_count": 42 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/154-accessoires.html",
+                      "doc_count": 16
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/109-accessoires",
+                      "doc_count": 13
+                    },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 11 }
+                  ]
+                }
+              },
+              {
+                "key": "/module/iqitwishlist/view",
+                "doc_count": 851,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 574,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 104
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/module/iqitwishlist/view",
+                      "doc_count": 34
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/mon-compte",
+                      "doc_count": 31
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet",
+                      "doc_count": 25
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/tee-shirts/4025-29460-2210195.html",
+                      "doc_count": 18
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 15
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 13
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/72-bas-de-jogging",
+                      "doc_count": 13
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/55-femme",
+                      "doc_count": 12
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/pulls/4205-32139-hoodie-avec-broderie-logo-homme-1920010.html",
+                      "doc_count": 12
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/pulls/4205-32140-hoodie-avec-broderie-logo-homme-1920010.html",
+                "doc_count": 826,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 377,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 126
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 86
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 63
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/59-sweats-hoodies",
+                      "doc_count": 52
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                      "doc_count": 30
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/bas-de-jogging/4206-32218-2140150.html",
+                      "doc_count": 28
+                    },
+                    { "key": "", "doc_count": 25 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/bas-de-jogging/4206-32226-2140150.html",
+                      "doc_count": 16
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/61--sweats-a-capuche-hoodies",
+                      "doc_count": 12
+                    },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 11 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/confirmation-commande",
+                "doc_count": 807,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 12,
+                  "buckets": [
+                    { "key": "https://secure.payplug.com/", "doc_count": 370 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande?step=3&embedded=1&def=0&modulename=payplug",
+                      "doc_count": 142
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 100
+                    },
+                    { "key": "https://www.paypal.com/", "doc_count": 61 },
+                    { "key": "", "doc_count": 58 },
+                    { "key": "https://checkout.getalma.eu/", "doc_count": 42 },
+                    { "key": "https://secure.payplug.com", "doc_count": 11 },
+                    {
+                      "key": "https://secure-magenta1.be2bill.com/",
+                      "doc_count": 5
+                    },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 4 },
+                    { "key": "https://checkout.getalma.eu", "doc_count": 2 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/55-femme",
+                "doc_count": 788,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 196,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 260
+                    },
+                    { "key": "", "doc_count": 96 },
+                    { "key": "https://www.google.com/", "doc_count": 94 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 54
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/55-femme?order=product.date_add.desc",
+                      "doc_count": 20
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/37-homme",
+                      "doc_count": 18
+                    },
+                    { "key": "https://www.google.fr/", "doc_count": 16 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/55-femme",
+                      "doc_count": 12
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/132-capsules-project-x-paris.html",
+                      "doc_count": 11
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 11
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/15-shop-my-instagram.html",
+                "doc_count": 761,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 448,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 120
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 43
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/15-shop-my-instagram.html",
+                      "doc_count": 33
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 25
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 18
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=my-account",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                      "doc_count": 16
+                    },
+                    { "key": "", "doc_count": 13 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 11
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/index.php",
+                "doc_count": 759,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes",
+                      "doc_count": 630
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 68
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes?utm_source=prestashop&utm_medium=email&utm_campaign=mailtransac",
+                      "doc_count": 30
+                    },
+                    { "key": "", "doc_count": 27 },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 2 },
+                    { "key": "https://www.google.com/", "doc_count": 1 },
+                    { "key": "https://www.google.fr/", "doc_count": 1 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/39-sweats-a-capuche-hoodies",
+                "doc_count": 753,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 411,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 89
+                    },
+                    { "key": "", "doc_count": 68 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 54
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 45 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/39-sweats-a-capuche-hoodies",
+                      "doc_count": 23
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 16
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/40-sweats-zippes",
+                      "doc_count": 14
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 12
+                    },
+                    { "key": "https://www.google.fr/", "doc_count": 11 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 10
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/50-pantalons",
+                "doc_count": 745,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 312,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 243
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 41
+                    },
+                    { "key": "", "doc_count": 38 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/50-pantalons",
+                      "doc_count": 31
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 30
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?gclid=Cj0KCQjwvZCZBhCiARIsAPXbajvvrQd6manAgs1JxG9sgL5JafKOARBHf6TDNndNiioKm6L0j71DC4saAqmUEALw_wcB",
+                      "doc_count": 13
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 11
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/24-short-homme",
+                      "doc_count": 10
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/50-pantalons?homme=pantalons",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/magasins",
+                      "doc_count": 8
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/en/",
+                "doc_count": 720,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 202,
+                  "buckets": [
+                    { "key": "", "doc_count": 251 },
+                    { "key": "https://www.google.com/", "doc_count": 130 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 39
+                    },
+                    { "key": "https://www.google.co.uk/", "doc_count": 22 },
+                    { "key": "https://www.bing.com/", "doc_count": 19 },
+                    {
+                      "key": "https://www.projectxparis.com/en/",
+                      "doc_count": 18
+                    },
+                    { "key": "https://www.google.de/", "doc_count": 12 },
+                    { "key": "https://www.facebook.com/", "doc_count": 11 },
+                    { "key": "https://www.google.ca/", "doc_count": 8 },
+                    {
+                      "key": "https://www.projectxparis.com/en/38-sweatshirts-hoodies",
+                      "doc_count": 8
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/230-vetement-one-piece-project-x-paris",
+                "doc_count": 700,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 234,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/195-project-x-paris-one-piece.html",
+                      "doc_count": 175
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/230-vetement-one-piece-project-x-paris",
+                      "doc_count": 76
+                    },
+                    { "key": "", "doc_count": 48 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 38
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 36
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?gclid=Cj0KCQjwyOuYBhCGARIsAIdGQRNMMHZ4tI-7VML7PMilOG-VzgAuX2wnH9rCW1XmHCwpyRj47IOCE6EaAiaDEALw_wcB",
+                      "doc_count": 33
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 20
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/12-tee-shirts",
+                      "doc_count": 15
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 14 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?controller=search&s=",
+                      "doc_count": 11
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/56-top-et-tee-shirt-femme",
+                "doc_count": 693,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 227,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                      "doc_count": 292
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 91
+                    },
+                    { "key": "", "doc_count": 22 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                      "doc_count": 18
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/59-sweats-hoodies",
+                      "doc_count": 9
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                      "doc_count": 8
+                    },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 7 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet",
+                      "doc_count": 7
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/63-blousons-vestes",
+                      "doc_count": 6
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/72-bas-de-jogging",
+                      "doc_count": 6
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/138-programme-de-fidelite.html",
+                "doc_count": 656,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 149,
+                  "buckets": [
+                    { "key": "", "doc_count": 260 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 58
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/138-programme-de-fidelite.html",
+                      "doc_count": 49
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/160-offre-anniversaire-.html",
+                      "doc_count": 29
+                    },
+                    {
+                      "key": "android-app://com.google.android.gm/",
+                      "doc_count": 28
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/159-code-promo.html",
+                      "doc_count": 25
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 21
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 13 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/120-outlet",
+                      "doc_count": 12
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/module/zerosix/account",
+                      "doc_count": 12
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/pulls/862-25070-hoodie-avec-broderie-logo-homme-1920010.html",
+                "doc_count": 631,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 10,
+                  "buckets": [
+                    { "key": "https://www.google.com/", "doc_count": 324 },
+                    { "key": "https://www.google.fr/", "doc_count": 195 },
+                    { "key": "", "doc_count": 71 },
+                    { "key": "https://www.google.fr", "doc_count": 12 },
+                    { "key": "https://www.google.com", "doc_count": 8 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/pulls/4205-32164-hoodie-avec-broderie-logo-homme-1920010.html?gclid=CjwKCAjwpqCZBhAbEiwAa7pXedrSd2rZy9VsBx4zgMVTHjR1DxVqZyrD2skEHJYnKzw0PH5tSl8LmRoC2FIQAvD_BwE",
+                      "doc_count": 4
+                    },
+                    { "key": "https://l.instagram.com/", "doc_count": 2 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/pulls/862-25070-hoodie-avec-broderie-logo-homme-1920010.html",
+                      "doc_count": 2
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/sweats-col-rond/861-25113-sweat-logo-contraste-homme-1920009.html",
+                      "doc_count": 2
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/promotions",
+                "doc_count": 589,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 194,
+                  "buckets": [
+                    { "key": "", "doc_count": 173 },
+                    { "key": "https://www.google.com/", "doc_count": 69 },
+                    { "key": "https://www.codespromofr.com/", "doc_count": 39 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 39
+                    },
+                    { "key": "https://www.google.fr/", "doc_count": 24 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/promotions",
+                      "doc_count": 17
+                    },
+                    { "key": "https://fr.search.yahoo.com/", "doc_count": 9 },
+                    { "key": "https://www.tiktok.com/", "doc_count": 9 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/37-homme",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/tee-shirts/3784-26063-2110161.html",
+                      "doc_count": 8
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/identite",
+                "doc_count": 558,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 44,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/identite",
+                      "doc_count": 170
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/mon-compte",
+                      "doc_count": 164
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes",
+                      "doc_count": 61
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 27
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/reduction",
+                      "doc_count": 21
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/adresses",
+                      "doc_count": 20
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/module/zerosix/account",
+                      "doc_count": 20
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/module/iqitwishlist/view",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/module/ps_emailalerts/account",
+                      "doc_count": 9
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=identity",
+                      "doc_count": 5
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/jeans/3675-25134-2090027.html",
+                "doc_count": 551,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 3,
+                  "buckets": [
+                    { "key": "https://www.google.fr/", "doc_count": 319 },
+                    { "key": "https://www.google.com/", "doc_count": 161 },
+                    { "key": "", "doc_count": 37 },
+                    { "key": "https://www.google.fr", "doc_count": 18 },
+                    { "key": "https://www.google.com", "doc_count": 4 },
+                    { "key": "https://www.google.nl/", "doc_count": 3 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/jeans/3675-25134-2090027.html",
+                      "doc_count": 2
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/jeans/3675-25134-2090027.html?gclid=CjwKCAjwpqCZBhAbEiwAa7pXeWAfOzv_lhyzEHzNnzeLW1E0DtdlFwasMtwIbUfhzoKJTL26mhQY4hoCEDUQAvD_BwE",
+                      "doc_count": 2
+                    },
+                    { "key": "https://l.instagram.com/", "doc_count": 1 },
+                    { "key": "https://www.google.de/", "doc_count": 1 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/15-tee-shirts-manches-courtes",
+                "doc_count": 540,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 305,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 52
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 39
+                    },
+                    { "key": "", "doc_count": 38 },
+                    { "key": "https://www.google.com/", "doc_count": 29 },
+                    { "key": "https://www.google.fr/", "doc_count": 23 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/15-tee-shirts-manches-courtes",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/29-tee-shirts-manches-longues",
+                      "doc_count": 11
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 10
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/15-tee-shirts-manches-courtes?couleur=noir",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/module/iqitwishlist/view",
+                      "doc_count": 8
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/jeans/954-15808-jean-skinny-tachete-homme-project-x-paris-t19910.html",
+                "doc_count": 526,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "https://www.google.fr/", "doc_count": 242 },
+                    { "key": "https://www.google.com/", "doc_count": 219 },
+                    { "key": "", "doc_count": 43 },
+                    { "key": "https://www.google.fr", "doc_count": 10 },
+                    { "key": "https://www.google.com", "doc_count": 6 },
+                    { "key": "https://www.google.com.vn/", "doc_count": 2 },
+                    { "key": "https://www.google.pt/", "doc_count": 1 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/21-jeans-slim-et-skinny",
+                      "doc_count": 1
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/21-jeans-slim-et-skinny?taille=28,29",
+                      "doc_count": 1
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/50-pantalons?taille=29",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/pulls/4205-32182-hoodie-avec-broderie-logo-homme-1920010.html",
+                "doc_count": 522,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 105,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 116
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 75
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/59-sweats-hoodies",
+                      "doc_count": 47
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 37
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 34 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                      "doc_count": 32
+                    },
+                    { "key": "", "doc_count": 27 },
+                    { "key": "https://www.google.fr/", "doc_count": 21 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/39-sweats-a-capuche-hoodies",
+                      "doc_count": 18
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/61--sweats-a-capuche-hoodies",
+                      "doc_count": 10
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/recuperation-mot-de-passe",
+                "doc_count": 521,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 18,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/recuperation-mot-de-passe",
+                      "doc_count": 184
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=my-account",
+                      "doc_count": 98
+                    },
+                    { "key": "", "doc_count": 88 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 86
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=zerosixaccount",
+                      "doc_count": 17
+                    },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 6 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recuperation-mot-de-passe?token=2b2bb0925e905ed68caceb5be6ecdc65&id_customer=193963&reset_token=0a2ba4588c3763de902756597e07f1fc566f377a",
+                      "doc_count": 3
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/17-chemises-surchemises-homme",
+                      "doc_count": 2
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=history",
+                      "doc_count": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/sweats-col-rond/4251-32831-2220174.html",
+                "doc_count": 519,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 77,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 135
+                    },
+                    { "key": "", "doc_count": 106 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 66
+                    },
+                    { "key": "http://instagram.com/", "doc_count": 41 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/37-homme",
+                      "doc_count": 32
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/bas-de-jogging/4252-32841-2240174.html",
+                      "doc_count": 23
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/bas-de-jogging/4252-32844-2240174.html",
+                      "doc_count": 13
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/16-sweats-col-rond",
+                      "doc_count": 10
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=Dove",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/sweats-col-rond/4251-32831-2220174.html",
+                      "doc_count": 8
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/magasins",
+                "doc_count": 517,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 213,
+                  "buckets": [
+                    { "key": "https://www.google.com/", "doc_count": 91 },
+                    { "key": "https://www.google.fr/", "doc_count": 74 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 37
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 27
+                    },
+                    { "key": "", "doc_count": 24 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/9-qui-sommes-nous-.html",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/65-nos-collaborations.html",
+                      "doc_count": 10
+                    },
+                    { "key": "https://www.projectxparis.com/", "doc_count": 9 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                      "doc_count": 7
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/54-jeans-cargo",
+                "doc_count": 511,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 168,
+                  "buckets": [
+                    { "key": "https://www.google.com/", "doc_count": 147 },
+                    { "key": "https://www.google.fr/", "doc_count": 89 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 23
+                    },
+                    { "key": "", "doc_count": 18 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/54-jeans-cargo",
+                      "doc_count": 14
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/39-sweats-a-capuche-hoodies",
+                      "doc_count": 11
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/13-jeans",
+                      "doc_count": 10
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/50-pantalons",
+                      "doc_count": 8
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/132-capsules-project-x-paris.html",
+                      "doc_count": 6
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/module/zerosix/account",
+                "doc_count": 489,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 91,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/mon-compte",
+                      "doc_count": 93
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/module/zerosix/account",
+                      "doc_count": 85
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/reduction",
+                      "doc_count": 48
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/module/payplug/cards?process=cardlist",
+                      "doc_count": 31
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/138-programme-de-fidelite.html",
+                      "doc_count": 30
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?back=zerosixaccount",
+                      "doc_count": 28
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/historique-commandes",
+                      "doc_count": 24
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/panier?action=show",
+                      "doc_count": 24
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/connexion?create_account=1",
+                      "doc_count": 19
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/commande",
+                      "doc_count": 16
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/84-manteaux-parkas",
+                "doc_count": 479,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 114,
+                  "buckets": [
+                    {
+                      "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 234
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/",
+                      "doc_count": 27
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/91-blousons-vestes",
+                      "doc_count": 26
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/84-manteaux-parkas",
+                      "doc_count": 19
+                    },
+                    { "key": "https://www.google.com/", "doc_count": 18 },
+                    { "key": "", "doc_count": 17 },
+                    { "key": "https://www.google.fr/", "doc_count": 6 },
+                    {
+                      "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 6
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                      "doc_count": 6
+                    },
+                    {
+                      "key": "https://www.projectxparis.com/fr/92-vestes-et-gilets",
+                      "doc_count": 6
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "os": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              { "key": "iOS", "doc_count": 110793 },
+              { "key": "Android", "doc_count": 80207 },
+              { "key": "Windows", "doc_count": 22619 },
+              { "key": "Mac OS X", "doc_count": 7875 },
+              { "key": "Other", "doc_count": 4610 },
+              { "key": "Linux", "doc_count": 933 },
+              { "key": "Chrome OS", "doc_count": 543 },
+              { "key": "Ubuntu", "doc_count": 68 },
+              { "key": "Tizen", "doc_count": 4 }
+            ]
+          },
+          "sources": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 62291,
+            "buckets": [
+              { "key": "", "doc_count": 31171 },
+              { "key": "https://www.google.com/", "doc_count": 24447 },
+              { "key": "https://www.google.fr/", "doc_count": 15364 },
+              {
+                "key": "https://www.projectxparis.com/fr/151-streetwear-homme.html",
+                "doc_count": 13844
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/",
+                "doc_count": 12336
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/41-survetement-et-jogging",
+                "doc_count": 5795
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/152-categorie-femme.html",
+                "doc_count": 5511
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/commande",
+                "doc_count": 5021
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/38-sweats-hoodies",
+                "doc_count": 4879
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/13-jeans",
+                "doc_count": 2979
+              },
+              { "key": "https://www.tiktok.com/", "doc_count": 2977 },
+              {
+                "key": "https://operation.projectxparis.com/",
+                "doc_count": 2856
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/66-survetement-femme",
+                "doc_count": 2468
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/91-blousons-vestes",
+                "doc_count": 2418
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/12-tee-shirts",
+                "doc_count": 1864
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/?utm_source=TikTok&utm_medium=Social&utm_campaign=TikTok_post",
+                "doc_count": 1852
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/59-sweats-hoodies",
+                "doc_count": 1729
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/mon-compte",
+                "doc_count": 1596
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/120-outlet",
+                "doc_count": 1569
+              },
+              { "key": "https://www.projectxparis.com/", "doc_count": 1505 },
+              { "key": "https://linktr.ee/", "doc_count": 1497 },
+              {
+                "key": "https://www.projectxparis.com/fr/recherche?tag=unisexe",
+                "doc_count": 1469
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/37-homme",
+                "doc_count": 1446
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/historique-commandes",
+                "doc_count": 1400
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/22-bas-de-jogging",
+                "doc_count": 1346
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/132-capsules-project-x-paris.html",
+                "doc_count": 1299
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/138-programme-de-fidelite.html",
+                "doc_count": 1154
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/72-bas-de-jogging",
+                "doc_count": 1086
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/connexion?back=my-account",
+                "doc_count": 1031
+              },
+              {
+                "key": "https://www.projectxparis.com/module/iqitwishlist/view",
+                "doc_count": 833
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/230-vetement-one-piece-project-x-paris",
+                "doc_count": 783
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/50-pantalons",
+                "doc_count": 765
+              },
+              { "key": "https://www.google.fr", "doc_count": 702 },
+              {
+                "key": "https://www.projectxparis.com/fr/39-sweats-a-capuche-hoodies",
+                "doc_count": 672
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/63-blousons-vestes",
+                "doc_count": 612
+              },
+              { "key": "http://instagram.com/", "doc_count": 605 },
+              { "key": "https://www.bing.com/", "doc_count": 560 },
+              {
+                "key": "https://www.projectxparis.com/fr/panier?action=show",
+                "doc_count": 552
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/56-top-et-tee-shirt-femme",
+                "doc_count": 550
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/55-femme",
+                "doc_count": 529
+              },
+              { "key": "https://www.projectxparis.com/en/", "doc_count": 512 },
+              {
+                "key": "https://www.projectxparis.com/fr/identite",
+                "doc_count": 508
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/15-tee-shirts-manches-courtes",
+                "doc_count": 452
+              },
+              { "key": "https://secure.payplug.com/", "doc_count": 427 },
+              {
+                "key": "https://www.projectxparis.com/fr/15-shop-my-instagram.html",
+                "doc_count": 411
+              },
+              { "key": "https://www.projectxparis.com/es/", "doc_count": 410 },
+              { "key": "https://www.google.be/", "doc_count": 404 },
+              { "key": "https://www.google.com", "doc_count": 397 },
+              {
+                "key": "https://www.projectxparis.com/fr/84-manteaux-parkas",
+                "doc_count": 386
+              },
+              {
+                "key": "https://www.projectxparis.com/fr/54-jeans-cargo",
+                "doc_count": 368
+              }
+            ]
+          },
+          "devices": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 8589,
+            "buckets": [
+              { "key": "iPhone", "doc_count": 110194 },
+              { "key": "Generic Smartphone", "doc_count": 55569 },
+              { "key": "Other", "doc_count": 32047 },
+              { "key": "Spider", "doc_count": 16039 },
+              { "key": "Samsung SM-G991B", "doc_count": 702 },
+              { "key": "iPad", "doc_count": 577 },
+              { "key": "Samsung SM-A528B", "doc_count": 434 },
+              { "key": "Huawei Browser", "doc_count": 367 },
+              { "key": "Samsung SM-G781B", "doc_count": 362 },
+              { "key": "Samsung SM-G973F", "doc_count": 337 },
+              { "key": "Samsung SM-S901B", "doc_count": 321 },
+              { "key": "Samsung SM-G990B", "doc_count": 309 },
+              { "key": "Samsung SM-A515F", "doc_count": 265 },
+              { "key": "Samsung SM-G960F", "doc_count": 251 },
+              { "key": "Samsung SM-G998B", "doc_count": 232 },
+              { "key": "Samsung SM-A217F", "doc_count": 221 },
+              { "key": "Samsung SM-G975F", "doc_count": 218 },
+              { "key": "Samsung SM-A125F", "doc_count": 213 },
+              { "key": "Samsung SM-A127F", "doc_count": 204 },
+              { "key": "Samsung SM-A226B", "doc_count": 201 }
+            ]
+          },
+          "name": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 338,
+            "buckets": [
+              { "key": "Mobile Safari", "doc_count": 85728 },
+              { "key": "Chrome Mobile", "doc_count": 52168 },
+              { "key": "Chrome", "doc_count": 23058 },
+              { "key": "Googlebot", "doc_count": 15668 },
+              { "key": "Instagram", "doc_count": 8933 },
+              { "key": "Google", "doc_count": 8473 },
+              { "key": "Samsung Internet", "doc_count": 6368 },
+              { "key": "Safari", "doc_count": 5218 },
+              { "key": "Mobile Safari UI/WKWebView", "doc_count": 4751 },
+              { "key": "Chrome Mobile iOS", "doc_count": 4732 },
+              { "key": "Chrome Mobile WebView", "doc_count": 4042 },
+              { "key": "Firefox", "doc_count": 3658 },
+              { "key": "Facebook", "doc_count": 1632 },
+              { "key": "Opera", "doc_count": 1109 },
+              { "key": "Snapchat", "doc_count": 484 },
+              { "key": "MiuiBrowser", "doc_count": 448 },
+              { "key": "Firefox Mobile", "doc_count": 281 },
+              { "key": "AdsBot-Google", "doc_count": 236 },
+              { "key": "Firefox iOS", "doc_count": 178 },
+              { "key": "Opera Mobile", "doc_count": 149 }
+            ]
+          },
+          "profils": {
+            "buckets": [
+              { "key": 0, "doc_count": 3165 },
+              { "key": 1, "doc_count": 2244 },
+              { "key": 2, "doc_count": 2090 },
+              { "key": 3, "doc_count": 2255 },
+              { "key": 4, "doc_count": 3260 },
+              { "key": 5, "doc_count": 6701 },
+              { "key": 6, "doc_count": 6596 },
+              { "key": 7, "doc_count": 7222 },
+              { "key": 8, "doc_count": 9287 },
+              { "key": 9, "doc_count": 9689 },
+              { "key": 10, "doc_count": 10413 },
+              { "key": 11, "doc_count": 10799 },
+              { "key": 12, "doc_count": 10749 },
+              { "key": 13, "doc_count": 11471 },
+              { "key": 14, "doc_count": 11557 },
+              { "key": 15, "doc_count": 13368 },
+              { "key": 16, "doc_count": 16092 },
+              { "key": 17, "doc_count": 15689 },
+              { "key": 18, "doc_count": 16392 },
+              { "key": 19, "doc_count": 18773 },
+              { "key": 20, "doc_count": 17539 },
+              { "key": 21, "doc_count": 11156 },
+              { "key": 22, "doc_count": 6724 },
+              { "key": 23, "doc_count": 4421 }
+            ]
+          },
+          "visiteurs": {
+            "buckets": [
+              {
+                "key_as_string": "2022-09-17T00:00:00.000Z",
+                "key": 1663372800000,
+                "doc_count": 9291,
+                "visiteurs_uniques": { "value": 1921 }
+              },
+              {
+                "key_as_string": "2022-09-18T00:00:00.000Z",
+                "key": 1663459200000,
+                "doc_count": 47650,
+                "visiteurs_uniques": { "value": 10144 }
+              },
+              {
+                "key_as_string": "2022-09-19T00:00:00.000Z",
+                "key": 1663545600000,
+                "doc_count": 40073,
+                "visiteurs_uniques": { "value": 8617 }
+              },
+              {
+                "key_as_string": "2022-09-20T00:00:00.000Z",
+                "key": 1663632000000,
+                "doc_count": 42013,
+                "visiteurs_uniques": { "value": 9006 }
+              },
+              {
+                "key_as_string": "2022-09-21T00:00:00.000Z",
+                "key": 1663718400000,
+                "doc_count": 44921,
+                "visiteurs_uniques": { "value": 9790 }
+              },
+              {
+                "key_as_string": "2022-09-22T00:00:00.000Z",
+                "key": 1663804800000,
+                "doc_count": 39384,
+                "visiteurs_uniques": { "value": 8605 }
+              },
+              {
+                "key_as_string": "2022-09-23T00:00:00.000Z",
+                "key": 1663891200000,
+                "doc_count": 4320,
+                "visiteurs_uniques": { "value": 984 }
+              }
+            ]
+          },
+          "pays": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5190,
+            "buckets": [
+              {
+                "key": "France",
+                "doc_count": 179087,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 77506,
+                  "buckets": [
+                    { "key": "Paris", "doc_count": 22571 },
+                    { "key": "North", "doc_count": 5949 },
+                    { "key": "Bouches-du-Rhône", "doc_count": 5739 },
+                    { "key": "Rhône", "doc_count": 5479 },
+                    { "key": "Upper Garonne", "doc_count": 4410 },
+                    { "key": "Gironde", "doc_count": 3889 },
+                    { "key": "Seine-Saint-Denis", "doc_count": 3331 },
+                    { "key": "Val-de-Marne", "doc_count": 3302 },
+                    { "key": "Loire-Atlantique", "doc_count": 3094 },
+                    { "key": "Seine-et-Marne", "doc_count": 2982 }
+                  ]
+                }
+              },
+              {
+                "key": "United States",
+                "doc_count": 21301,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 543,
+                  "buckets": [
+                    { "key": "Virginia", "doc_count": 509 },
+                    { "key": "New York", "doc_count": 404 },
+                    { "key": "California", "doc_count": 376 },
+                    { "key": "Massachusetts", "doc_count": 282 },
+                    { "key": "Washington", "doc_count": 262 },
+                    { "key": "Pennsylvania", "doc_count": 187 },
+                    { "key": "Florida", "doc_count": 162 },
+                    { "key": "Georgia", "doc_count": 108 },
+                    { "key": "Texas", "doc_count": 93 },
+                    { "key": "New Jersey", "doc_count": 63 }
+                  ]
+                }
+              },
+              {
+                "key": "Belgium",
+                "doc_count": 6162,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 105,
+                  "buckets": [
+                    { "key": "Hainaut Province", "doc_count": 1609 },
+                    { "key": "Brussels Capital", "doc_count": 902 },
+                    { "key": "Liège Province", "doc_count": 603 },
+                    { "key": "East Flanders Province", "doc_count": 489 },
+                    { "key": "Walloon Brabant Province", "doc_count": 356 },
+                    { "key": "Antwerp Province", "doc_count": 352 },
+                    { "key": "West Flanders Province", "doc_count": 277 },
+                    { "key": "Flemish Brabant Province", "doc_count": 216 },
+                    { "key": "Namur Province", "doc_count": 154 },
+                    { "key": "Limburg Province", "doc_count": 138 }
+                  ]
+                }
+              },
+              {
+                "key": "Spain",
+                "doc_count": 3198,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 697,
+                  "buckets": [
+                    { "key": "Barcelona", "doc_count": 752 },
+                    { "key": "Madrid", "doc_count": 342 },
+                    { "key": "Seville", "doc_count": 183 },
+                    { "key": "Malaga", "doc_count": 175 },
+                    { "key": "Andalusia", "doc_count": 99 },
+                    { "key": "Biscay", "doc_count": 71 },
+                    { "key": "Murcia", "doc_count": 67 },
+                    { "key": "Valencia", "doc_count": 65 },
+                    { "key": "Huelva", "doc_count": 64 },
+                    { "key": "Tarragona", "doc_count": 58 }
+                  ]
+                }
+              },
+              {
+                "key": "United Kingdom",
+                "doc_count": 2342,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 942,
+                  "buckets": [
+                    { "key": "Warwickshire", "doc_count": 112 },
+                    { "key": "England", "doc_count": 94 },
+                    { "key": "Birmingham", "doc_count": 60 },
+                    { "key": "Leicester", "doc_count": 54 },
+                    { "key": "Brighton and Hove", "doc_count": 46 },
+                    { "key": "Leeds", "doc_count": 41 },
+                    { "key": "Manchester", "doc_count": 38 },
+                    { "key": "Suffolk", "doc_count": 38 },
+                    { "key": "Edinburgh", "doc_count": 34 },
+                    { "key": "Gloucestershire", "doc_count": 32 }
+                  ]
+                }
+              },
+              {
+                "key": "Germany",
+                "doc_count": 1715,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 33,
+                  "buckets": [
+                    { "key": "Baden-Württemberg Region", "doc_count": 388 },
+                    { "key": "North Rhine-Westphalia", "doc_count": 357 },
+                    { "key": "Hesse", "doc_count": 162 },
+                    { "key": "Bavaria", "doc_count": 142 },
+                    { "key": "Rheinland-Pfalz", "doc_count": 77 },
+                    { "key": "Land Berlin", "doc_count": 63 },
+                    { "key": "Lower Saxony", "doc_count": 63 },
+                    { "key": "Hamburg", "doc_count": 23 },
+                    { "key": "Saxony", "doc_count": 20 },
+                    { "key": "Schleswig-Holstein", "doc_count": 10 }
+                  ]
+                }
+              },
+              {
+                "key": "Réunion",
+                "doc_count": 1130,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": []
+                }
+              },
+              {
+                "key": "Canada",
+                "doc_count": 995,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "Quebec", "doc_count": 515 },
+                    { "key": "Ontario", "doc_count": 213 },
+                    { "key": "British Columbia", "doc_count": 79 },
+                    { "key": "Alberta", "doc_count": 38 },
+                    { "key": "Manitoba", "doc_count": 19 },
+                    { "key": "Prince Edward Island", "doc_count": 5 },
+                    { "key": "New Brunswick", "doc_count": 3 },
+                    { "key": "Saskatchewan", "doc_count": 1 }
+                  ]
+                }
+              },
+              {
+                "key": "Switzerland",
+                "doc_count": 934,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 41,
+                  "buckets": [
+                    { "key": "Lucerne", "doc_count": 125 },
+                    { "key": "Zurich", "doc_count": 117 },
+                    { "key": "Vaud", "doc_count": 115 },
+                    { "key": "Geneva", "doc_count": 69 },
+                    { "key": "Bern", "doc_count": 30 },
+                    { "key": "Aargau", "doc_count": 29 },
+                    { "key": "Neuchâtel", "doc_count": 29 },
+                    { "key": "Thurgau", "doc_count": 29 },
+                    { "key": "Grisons", "doc_count": 24 },
+                    { "key": "Ticino", "doc_count": 23 }
+                  ]
+                }
+              },
+              {
+                "key": "Netherlands",
+                "doc_count": 859,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 24,
+                  "buckets": [
+                    { "key": "North Holland", "doc_count": 211 },
+                    { "key": "South Holland", "doc_count": 175 },
+                    { "key": "Provincie Utrecht", "doc_count": 60 },
+                    { "key": "Limburg", "doc_count": 57 },
+                    { "key": "North Brabant", "doc_count": 50 },
+                    { "key": "Provincie Gelderland", "doc_count": 43 },
+                    { "key": "Provincie Overijssel", "doc_count": 29 },
+                    { "key": "Groningen", "doc_count": 27 },
+                    { "key": "Provincie Flevoland", "doc_count": 22 },
+                    { "key": "Provincie Zeeland", "doc_count": 18 }
+                  ]
+                }
+              },
+              {
+                "key": "Ireland",
+                "doc_count": 625,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "Leinster", "doc_count": 548 },
+                    { "key": "Waterford", "doc_count": 21 },
+                    { "key": "Munster", "doc_count": 10 },
+                    { "key": "Limerick", "doc_count": 7 },
+                    { "key": "County Wexford", "doc_count": 5 },
+                    { "key": "Co Kerry", "doc_count": 2 },
+                    { "key": "County Cork", "doc_count": 2 },
+                    { "key": "County Galway", "doc_count": 1 }
+                  ]
+                }
+              },
+              {
+                "key": "Romania",
+                "doc_count": 622,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 30,
+                  "buckets": [
+                    { "key": "Bucuresti", "doc_count": 372 },
+                    { "key": "Bihor", "doc_count": 16 },
+                    { "key": "Judetul Valcea", "doc_count": 16 },
+                    { "key": "Constanta", "doc_count": 12 },
+                    { "key": "Maramureş", "doc_count": 12 },
+                    { "key": "Judetul Neamt", "doc_count": 11 },
+                    { "key": "Judetul Galati", "doc_count": 10 },
+                    { "key": "Judetul Salaj", "doc_count": 8 },
+                    { "key": "Prahova", "doc_count": 8 },
+                    { "key": "Judetul Mures", "doc_count": 6 }
+                  ]
+                }
+              },
+              {
+                "key": "Italy",
+                "doc_count": 575,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 110,
+                  "buckets": [
+                    { "key": "Milan", "doc_count": 77 },
+                    { "key": "Rome", "doc_count": 75 },
+                    { "key": "Naples", "doc_count": 39 },
+                    { "key": "Turin", "doc_count": 19 },
+                    { "key": "Provincia di Bergamo", "doc_count": 18 },
+                    { "key": "Bari", "doc_count": 16 },
+                    { "key": "Provincia di Vicenza", "doc_count": 16 },
+                    { "key": "Provincia di Perugia", "doc_count": 14 },
+                    { "key": "Provincia di Savona", "doc_count": 12 },
+                    { "key": "Monza Brianza", "doc_count": 11 }
+                  ]
+                }
+              },
+              {
+                "key": "Algeria",
+                "doc_count": 376,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 32,
+                  "buckets": [
+                    { "key": "Algiers", "doc_count": 92 },
+                    { "key": "Sidi Bel Abbès", "doc_count": 52 },
+                    { "key": "Oran", "doc_count": 47 },
+                    { "key": "Constantine", "doc_count": 35 },
+                    { "key": "Annaba", "doc_count": 12 },
+                    { "key": "Bouira", "doc_count": 10 },
+                    { "key": "Batna", "doc_count": 8 },
+                    { "key": "Relizane", "doc_count": 8 },
+                    { "key": "Chlef", "doc_count": 7 },
+                    { "key": "Tiaret", "doc_count": 7 }
+                  ]
+                }
+              },
+              {
+                "key": "Portugal",
+                "doc_count": 339,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 5,
+                  "buckets": [
+                    { "key": "Lisbon", "doc_count": 156 },
+                    { "key": "Faro", "doc_count": 39 },
+                    { "key": "Porto", "doc_count": 31 },
+                    { "key": "Braga", "doc_count": 30 },
+                    { "key": "Aveiro", "doc_count": 16 },
+                    { "key": "Viseu", "doc_count": 10 },
+                    { "key": "Santarém", "doc_count": 9 },
+                    { "key": "Coimbra", "doc_count": 6 },
+                    { "key": "Setúbal", "doc_count": 5 },
+                    { "key": "Vila Real", "doc_count": 5 }
+                  ]
+                }
+              },
+              {
+                "key": "Israel",
+                "doc_count": 334,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "Jerusalem", "doc_count": 161 },
+                    { "key": "Tel Aviv", "doc_count": 71 },
+                    { "key": "Central District", "doc_count": 54 },
+                    { "key": "Haifa", "doc_count": 12 }
+                  ]
+                }
+              },
+              {
+                "key": "Morocco",
+                "doc_count": 325,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 10,
+                  "buckets": [
+                    { "key": "Casablanca", "doc_count": 49 },
+                    { "key": "Rabat", "doc_count": 41 },
+                    { "key": "Meknes", "doc_count": 38 },
+                    { "key": "Kenitra Province", "doc_count": 21 },
+                    { "key": "Skhirate-Temara", "doc_count": 13 },
+                    { "key": "Fes", "doc_count": 9 },
+                    { "key": "Marrakech", "doc_count": 9 },
+                    { "key": "Sale", "doc_count": 9 },
+                    { "key": "Agadir-Ida-ou-Tnan", "doc_count": 4 },
+                    { "key": "Beni-Mellal", "doc_count": 2 }
+                  ]
+                }
+              },
+              {
+                "key": "Poland",
+                "doc_count": 312,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 2,
+                  "buckets": [
+                    { "key": "Mazovia", "doc_count": 106 },
+                    { "key": "Silesia", "doc_count": 34 },
+                    { "key": "Lesser Poland", "doc_count": 18 },
+                    { "key": "Lower Silesia", "doc_count": 16 },
+                    { "key": "Pomerania", "doc_count": 13 },
+                    { "key": "Kujawsko-Pomorskie", "doc_count": 12 },
+                    { "key": "Lublin", "doc_count": 9 },
+                    { "key": "Świętokrzyskie", "doc_count": 7 },
+                    { "key": "Warmia-Masuria", "doc_count": 3 },
+                    { "key": "West Pomerania", "doc_count": 2 }
+                  ]
+                }
+              },
+              {
+                "key": "Martinique",
+                "doc_count": 305,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": []
+                }
+              },
+              {
+                "key": "Japan",
+                "doc_count": 289,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "Saitama", "doc_count": 237 },
+                    { "key": "Tokyo", "doc_count": 18 },
+                    { "key": "Tochigi", "doc_count": 3 },
+                    { "key": "Fukushima-ken", "doc_count": 2 },
+                    { "key": "Kyoto", "doc_count": 2 },
+                    { "key": "Ōsaka", "doc_count": 2 },
+                    { "key": "Kanagawa", "doc_count": 1 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "beta.projectxparis.com",
+          "doc_count": 116,
+          "pages": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "/fr/",
+                "doc_count": 24,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "", "doc_count": 23 },
+                    {
+                      "key": "https://beta.projectxparis.com/fr/commande",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/commande",
+                "doc_count": 23,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/commande",
+                      "doc_count": 17
+                    },
+                    {
+                      "key": "https://beta.projectxparis.com/fr/femme/4160-31301-robe-debardeur.html",
+                      "doc_count": 2
+                    },
+                    {
+                      "key": "https://beta.projectxparis.com/fr/jeans/4018-29364-tu216904.html",
+                      "doc_count": 2
+                    },
+                    {
+                      "key": "https://beta.projectxparis.com/fr/panier",
+                      "doc_count": 1
+                    },
+                    {
+                      "key": "https://beta.projectxparis.com/fr/panier?action=show",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/sweats-col-rond/4251-32825-2220174.html",
+                "doc_count": 15,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/38-sweats-hoodies",
+                      "doc_count": 15
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/promotions",
+                "doc_count": 12,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "", "doc_count": 10 },
+                    {
+                      "key": "https://beta.projectxparis.com/fr/promotions",
+                      "doc_count": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/femme/4160-31301-robe-debardeur.html",
+                "doc_count": 11,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/62-robes",
+                      "doc_count": 11
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/120-outlet",
+                "doc_count": 6,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [{ "key": "", "doc_count": 6 }]
+                }
+              },
+              {
+                "key": "/fr/37-homme",
+                "doc_count": 6,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/promotions",
+                      "doc_count": 6
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/151-streetwear-homme.html",
+                "doc_count": 2,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/",
+                      "doc_count": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/62-robes",
+                "doc_count": 2,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/",
+                      "doc_count": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/confirmation-commande",
+                "doc_count": 2,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/commande?step=3&embedded=1&def=0&modulename=payplug",
+                      "doc_count": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/panier",
+                "doc_count": 2,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "", "doc_count": 1 },
+                    {
+                      "key": "https://beta.projectxparis.com/fr/commande",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/short-homme/4162-31356-short-grand-logo-imprime-degrade.html",
+                "doc_count": 2,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/promotions",
+                      "doc_count": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/adminProjectX",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [{ "key": "", "doc_count": 1 }]
+                }
+              },
+              {
+                "key": "/fr/13-jeans",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/151-streetwear-homme.html",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/38-sweats-hoodies",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/pulls/862-13541-hoodie-avec-broderie-logo-homme-1920010.html",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/identite",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/mon-compte",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/jeans/4018-29364-tu216904.html",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/13-jeans",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/jeans/4018-tu216904.html",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [{ "key": "", "doc_count": 1 }]
+                }
+              },
+              {
+                "key": "/fr/mon-compte",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/femme/4160-31301-robe-debardeur.html",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/pulls/862-13541-hoodie-avec-broderie-logo-homme-1920010.html",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/sweats-col-rond/861-26370-sweat-logo-contraste-homme-1920009.html",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/sweats-col-rond/861-26370-sweat-logo-contraste-homme-1920009.html",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://beta.projectxparis.com/fr/femme/4160-31301-robe-debardeur.html",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "os": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              { "key": "Mac OS X", "doc_count": 115 },
+              { "key": "iOS", "doc_count": 1 }
+            ]
+          },
+          "sources": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              { "key": "", "doc_count": 42 },
+              {
+                "key": "https://beta.projectxparis.com/fr/commande",
+                "doc_count": 19
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/38-sweats-hoodies",
+                "doc_count": 15
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/62-robes",
+                "doc_count": 11
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/promotions",
+                "doc_count": 10
+              },
+              { "key": "https://beta.projectxparis.com/fr/", "doc_count": 4 },
+              {
+                "key": "https://beta.projectxparis.com/fr/femme/4160-31301-robe-debardeur.html",
+                "doc_count": 4
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/commande?step=3&embedded=1&def=0&modulename=payplug",
+                "doc_count": 2
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/jeans/4018-29364-tu216904.html",
+                "doc_count": 2
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/13-jeans",
+                "doc_count": 1
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/151-streetwear-homme.html",
+                "doc_count": 1
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/mon-compte",
+                "doc_count": 1
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/panier",
+                "doc_count": 1
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/panier?action=show",
+                "doc_count": 1
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/pulls/862-13541-hoodie-avec-broderie-logo-homme-1920010.html",
+                "doc_count": 1
+              },
+              {
+                "key": "https://beta.projectxparis.com/fr/sweats-col-rond/861-26370-sweat-logo-contraste-homme-1920009.html",
+                "doc_count": 1
+              }
+            ]
+          },
+          "devices": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              { "key": "Other", "doc_count": 115 },
+              { "key": "iPhone", "doc_count": 1 }
+            ]
+          },
+          "name": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              { "key": "Chrome", "doc_count": 115 },
+              { "key": "Mobile Safari", "doc_count": 1 }
+            ]
+          },
+          "profils": {
+            "buckets": [
+              { "key": 0, "doc_count": 0 },
+              { "key": 1, "doc_count": 0 },
+              { "key": 2, "doc_count": 0 },
+              { "key": 3, "doc_count": 0 },
+              { "key": 4, "doc_count": 0 },
+              { "key": 5, "doc_count": 0 },
+              { "key": 6, "doc_count": 0 },
+              { "key": 7, "doc_count": 0 },
+              { "key": 8, "doc_count": 9 },
+              { "key": 9, "doc_count": 33 },
+              { "key": 10, "doc_count": 32 },
+              { "key": 11, "doc_count": 5 },
+              { "key": 12, "doc_count": 1 },
+              { "key": 13, "doc_count": 2 },
+              { "key": 14, "doc_count": 2 },
+              { "key": 15, "doc_count": 14 },
+              { "key": 16, "doc_count": 5 },
+              { "key": 17, "doc_count": 0 },
+              { "key": 18, "doc_count": 0 },
+              { "key": 19, "doc_count": 0 },
+              { "key": 20, "doc_count": 13 },
+              { "key": 21, "doc_count": 0 },
+              { "key": 22, "doc_count": 0 },
+              { "key": 23, "doc_count": 0 }
+            ]
+          },
+          "visiteurs": {
+            "buckets": [
+              {
+                "key_as_string": "2022-09-19T00:00:00.000Z",
+                "key": 1663545600000,
+                "doc_count": 77,
+                "visiteurs_uniques": { "value": 4 }
+              },
+              {
+                "key_as_string": "2022-09-20T00:00:00.000Z",
+                "key": 1663632000000,
+                "doc_count": 5,
+                "visiteurs_uniques": { "value": 1 }
+              },
+              {
+                "key_as_string": "2022-09-21T00:00:00.000Z",
+                "key": 1663718400000,
+                "doc_count": 9,
+                "visiteurs_uniques": { "value": 1 }
+              },
+              {
+                "key_as_string": "2022-09-22T00:00:00.000Z",
+                "key": 1663804800000,
+                "doc_count": 25,
+                "visiteurs_uniques": { "value": 3 }
+              }
+            ]
+          },
+          "pays": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "France",
+                "doc_count": 116,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "Rhône", "doc_count": 96 },
+                    { "key": "Val-de-Marne", "doc_count": 15 },
+                    { "key": "Ille-et-Vilaine", "doc_count": 3 },
+                    { "key": "Essonne", "doc_count": 2 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "www-projectxparis-com.translate.goog",
+          "doc_count": 4,
+          "pages": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "/fr/41-survetement-et-jogging",
+                "doc_count": 2,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://www-projectxparis-com.translate.goog/fr/?_x_tr_sl=fr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc",
+                      "doc_count": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "/en/",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "https://www.google.com/", "doc_count": 1 }
+                  ]
+                }
+              },
+              {
+                "key": "/fr/",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    { "key": "https://www.google.com", "doc_count": 1 }
+                  ]
+                }
+              }
+            ]
+          },
+          "os": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              { "key": "Mac OS X", "doc_count": 3 },
+              { "key": "Windows", "doc_count": 1 }
+            ]
+          },
+          "sources": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "https://www-projectxparis-com.translate.goog/fr/?_x_tr_sl=fr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc",
+                "doc_count": 2
+              },
+              { "key": "https://www.google.com", "doc_count": 1 },
+              { "key": "https://www.google.com/", "doc_count": 1 }
+            ]
+          },
+          "devices": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [{ "key": "Other", "doc_count": 4 }]
+          },
+          "name": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              { "key": "Safari", "doc_count": 3 },
+              { "key": "Chrome", "doc_count": 1 }
+            ]
+          },
+          "profils": {
+            "buckets": [
+              { "key": 0, "doc_count": 0 },
+              { "key": 1, "doc_count": 0 },
+              { "key": 2, "doc_count": 0 },
+              { "key": 3, "doc_count": 0 },
+              { "key": 4, "doc_count": 0 },
+              { "key": 5, "doc_count": 0 },
+              { "key": 6, "doc_count": 0 },
+              { "key": 7, "doc_count": 0 },
+              { "key": 8, "doc_count": 1 },
+              { "key": 9, "doc_count": 0 },
+              { "key": 10, "doc_count": 0 },
+              { "key": 11, "doc_count": 0 },
+              { "key": 12, "doc_count": 0 },
+              { "key": 13, "doc_count": 0 },
+              { "key": 14, "doc_count": 0 },
+              { "key": 15, "doc_count": 0 },
+              { "key": 16, "doc_count": 0 },
+              { "key": 17, "doc_count": 0 },
+              { "key": 18, "doc_count": 0 },
+              { "key": 19, "doc_count": 3 },
+              { "key": 20, "doc_count": 0 },
+              { "key": 21, "doc_count": 0 },
+              { "key": 22, "doc_count": 0 },
+              { "key": 23, "doc_count": 0 }
+            ]
+          },
+          "visiteurs": {
+            "buckets": [
+              {
+                "key_as_string": "2022-09-18T00:00:00.000Z",
+                "key": 1663459200000,
+                "doc_count": 3,
+                "visiteurs_uniques": { "value": 1 }
+              },
+              {
+                "key_as_string": "2022-09-19T00:00:00.000Z",
+                "key": 1663545600000,
+                "doc_count": 0,
+                "visiteurs_uniques": { "value": 0 }
+              },
+              {
+                "key_as_string": "2022-09-20T00:00:00.000Z",
+                "key": 1663632000000,
+                "doc_count": 1,
+                "visiteurs_uniques": { "value": 1 }
+              }
+            ]
+          },
+          "pays": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "Canada",
+                "doc_count": 3,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [{ "key": "British Columbia", "doc_count": 3 }]
+                }
+              },
+              {
+                "key": "Sweden",
+                "doc_count": 1,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [{ "key": "Värmland", "doc_count": 1 }]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "gtm-msr.appspot.com",
+          "doc_count": 1,
+          "pages": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "/render2",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                    {
+                      "key": "https://gtm-msr.appspot.com/render?id=GTM-KZKTZG9",
+                      "doc_count": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "os": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [{ "key": "Windows", "doc_count": 1 }]
+          },
+          "sources": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "https://gtm-msr.appspot.com/render?id=GTM-KZKTZG9",
+                "doc_count": 1
+              }
+            ]
+          },
+          "devices": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [{ "key": "Other", "doc_count": 1 }]
+          },
+          "name": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [{ "key": "Chrome", "doc_count": 1 }]
+          },
+          "profils": {
+            "buckets": [
+              { "key": 0, "doc_count": 0 },
+              { "key": 1, "doc_count": 0 },
+              { "key": 2, "doc_count": 0 },
+              { "key": 3, "doc_count": 0 },
+              { "key": 4, "doc_count": 0 },
+              { "key": 5, "doc_count": 0 },
+              { "key": 6, "doc_count": 0 },
+              { "key": 7, "doc_count": 0 },
+              { "key": 8, "doc_count": 0 },
+              { "key": 9, "doc_count": 0 },
+              { "key": 10, "doc_count": 0 },
+              { "key": 11, "doc_count": 0 },
+              { "key": 12, "doc_count": 0 },
+              { "key": 13, "doc_count": 0 },
+              { "key": 14, "doc_count": 0 },
+              { "key": 15, "doc_count": 0 },
+              { "key": 16, "doc_count": 0 },
+              { "key": 17, "doc_count": 1 },
+              { "key": 18, "doc_count": 0 },
+              { "key": 19, "doc_count": 0 },
+              { "key": 20, "doc_count": 0 },
+              { "key": 21, "doc_count": 0 },
+              { "key": 22, "doc_count": 0 },
+              { "key": 23, "doc_count": 0 }
+            ]
+          },
+          "visiteurs": {
+            "buckets": [
+              {
+                "key_as_string": "2022-09-19T00:00:00.000Z",
+                "key": 1663545600000,
+                "doc_count": 1,
+                "visiteurs_uniques": { "value": 1 }
+              }
+            ]
+          },
+          "pays": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "United States",
+                "doc_count": 1,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "localhost",
+          "doc_count": 1,
+          "pages": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "/fr/",
+                "doc_count": 1,
+                "sources": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [{ "key": "", "doc_count": 1 }]
+                }
+              }
+            ]
+          },
+          "os": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [{ "key": "Mac OS X", "doc_count": 1 }]
+          },
+          "sources": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [{ "key": "", "doc_count": 1 }]
+          },
+          "devices": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [{ "key": "Other", "doc_count": 1 }]
+          },
+          "name": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [{ "key": "Chrome", "doc_count": 1 }]
+          },
+          "profils": {
+            "buckets": [
+              { "key": 0, "doc_count": 0 },
+              { "key": 1, "doc_count": 0 },
+              { "key": 2, "doc_count": 0 },
+              { "key": 3, "doc_count": 0 },
+              { "key": 4, "doc_count": 0 },
+              { "key": 5, "doc_count": 0 },
+              { "key": 6, "doc_count": 0 },
+              { "key": 7, "doc_count": 1 },
+              { "key": 8, "doc_count": 0 },
+              { "key": 9, "doc_count": 0 },
+              { "key": 10, "doc_count": 0 },
+              { "key": 11, "doc_count": 0 },
+              { "key": 12, "doc_count": 0 },
+              { "key": 13, "doc_count": 0 },
+              { "key": 14, "doc_count": 0 },
+              { "key": 15, "doc_count": 0 },
+              { "key": 16, "doc_count": 0 },
+              { "key": 17, "doc_count": 0 },
+              { "key": 18, "doc_count": 0 },
+              { "key": 19, "doc_count": 0 },
+              { "key": 20, "doc_count": 0 },
+              { "key": 21, "doc_count": 0 },
+              { "key": 22, "doc_count": 0 },
+              { "key": 23, "doc_count": 0 }
+            ]
+          },
+          "visiteurs": {
+            "buckets": [
+              {
+                "key_as_string": "2022-09-19T00:00:00.000Z",
+                "key": 1663545600000,
+                "doc_count": 1,
+                "visiteurs_uniques": { "value": 1 }
+              }
+            ]
+          },
+          "pays": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "France",
+                "doc_count": 1,
+                "regions": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [{ "key": "Essonne", "doc_count": 1 }]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

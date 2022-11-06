@@ -7,7 +7,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Result<HostStats[]>>
 ) {
-  console.log("request body :", req.body);
   const fairlyticsKey = req.body.fairlyticsKey; // private key
   const dateInterval = req.body.dateInterval;
 
@@ -15,7 +14,6 @@ export default async function handler(
   const publicKey = await dependencies.secureKeyRepository.getPublicKey(
     fairlyticsKey
   );
-  console.log("publicKey :", publicKey);
 
   if (!publicKey) {
     return res.status(404).json({ error: "Invalid key" });

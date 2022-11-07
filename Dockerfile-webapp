@@ -37,6 +37,8 @@ COPY --from=builder /app/public ./public
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+RUN mkdir /app/db && chown -R nextjs:nodejs /app/db
+RUN mkdir /app/certs && chown -R nextjs:nodejs /app/certs
 
 USER nextjs
 

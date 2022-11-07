@@ -14,6 +14,23 @@ server {
         root /var/www/certbot;
     }
 
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_tokens off;
+    server_name yourcustomdomainhere;
+
+    ssl_certificate /etc/letsencrypt/live/$server_name/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/$server_name/privkey.pem;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
     location /hit {
         proxy_pass http://logstash;
         proxy_set_header    Host                $http_host;

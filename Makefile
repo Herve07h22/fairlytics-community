@@ -55,17 +55,14 @@ install-ssl:
 	@echo "----------------------------------------------------------------"
 	@echo "Installing the first SSL certificates to $(FAIRLYTICS_URL)"
 	@echo "----------------------------------------------------------------"
-	#docker-compose down
-	#docker run -it --rm -p 80:80 --name certbot -v ''$(pwd)'/certificats:/etc/letsencrypt' certbot/certbot certonly --standalone --preferred-challenges http 
-	#docker run -it --rm 
 	@echo "Starting all the services : nginx and certbot have to be running"
 	@docker-compose up -d logstash elasticsearch nginx webapp certbot
 	@echo "We'll using nginx to serve $(FAIRLYTICS_URL)/.well-known/acme-challenge/"
 	@echo "(that's the place certbot will write the challenge)"
-	@docker exec -it certbot-fairlytics certbot certonly --webroot -w /var/www/certbot
+	@docker exec -it certbot-fairlytics certbot certonly --webroot -w /var/www/certbot --cert-name fairlytics
 	@echo "Allowing nginx to read the certificate"
 	@docker exec -it nginx-fairlytics sh -c "chown -R nginx:nginx /etc/letsencrypt/*"
 	@echo "Updating nginx.conf"
+	@cp ./nginx/nginx.conf.https ./nginx/nginx.conf
 	@docker-compose restart nginx
-	@cp ./nginx/nginx.conf.https ./nginx/nginx.conf 
 	@echo "----------------------------------------------------------------"

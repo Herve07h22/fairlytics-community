@@ -22,10 +22,9 @@ server {
 server {
     listen 443 ssl;
     server_tokens off;
-    server_name   ~^(www\.)?(?<domain>.+)$;
 
-    ssl_certificate /etc/letsencrypt/live/$domain/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/$domain/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/fairlytics/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/fairlytics/privkey.pem;
 
     location /.well-known/acme-challenge/ {
         root /var/www/certbot;

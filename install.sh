@@ -4,6 +4,29 @@ echo Installation
 
 source .env
 
+if type lsb_release >/dev/null 2>&1; then
+    # linuxbase.org
+    OS=$(lsb_release -si)
+    VER=$(lsb_release -sr)
+else
+    # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
+    OS=$(uname -s)
+    VER=$(uname -r)
+fi
+
+echo "$OS"
+
+if [ "$OS" = "Debian" ]
+then
+    echo "Setting vm.max_map_count for Linux Debian"
+    sysctl -w vm.max_map_count=262144
+fi
+
+if [ "$OS" = "Darwin" ]
+then
+    echo "Happy to have a Mac"
+fi
+
 if [ -z ${FAIRLYTICS_URL} ]
 then
     echo "Error : \$FAIRLYTICS_URL is not set in the .env file"
@@ -47,9 +70,10 @@ docker build -f Dockerfile-webapp -t webapp-fairlytics  .
 
 echo "Installing ElasticSearch"
 make install-es
+
 make create-index
 
 echo "Starting..."
 make start
 
-echo "To send something to ElasticSearch : run make test"
+echo "To send something to ElasticSearch (wait a minute to make sure that Logstash is up) : make test"

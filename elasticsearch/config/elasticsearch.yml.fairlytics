@@ -1,4 +1,4 @@
 
-network.host: "elasticsearch"
-
+network.host: elasticsearch
+cluster.name: "docker-cluster"
 http.publish_host: "elasticsearch"

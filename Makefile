@@ -2,8 +2,9 @@ include .env
 
 install-es:
 	@docker compose down
-	@docker volume rm -f fairlytics-oss_elasticsearch
-	@docker compose build
+	@docker volume rm -f `docker volume ls -q -fname=fairlytics*` skip-if-not-exist
+	@docker compose build --no-cache
+	@mkdir -p ./elasticsearch/certs
 	@docker compose up -d elasticsearch
 	@echo "Waiting for Elasticsearch to start..."
 	@while [ -z `docker exec -it elasticsearch-fairlytics /bin/bash -c "find /usr/share/elasticsearch -name http_ca.crt" | grep http_ca.crt ` ]; do sleep 2; done

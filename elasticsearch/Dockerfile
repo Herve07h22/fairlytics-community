@@ -12,7 +12,4 @@ ENV ELASTIC_PASSWORD={$ELASTIC_PASSWORD}
 COPY ./config/elasticsearch.yml.fairlytics /usr/share/elasticsearch/config/elasticsearch.yml
 COPY ./config/mapping.json /usr/share/elasticsearch/config/mapping.json
 
-USER root
-RUN apt-get -y update && apt-get -y install curl
-
 USER elasticsearch

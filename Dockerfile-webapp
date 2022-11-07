@@ -28,6 +28,7 @@ WORKDIR /app
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
 
+# Default user is node:node
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
@@ -37,10 +38,13 @@ COPY --from=builder /app/public ./public
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-RUN mkdir /app/db && chown -R nextjs:nodejs /app/db
-RUN mkdir /app/certs && chown -R nextjs:nodejs /app/certs
 
-USER nextjs
+# TODO : changing to nextjs user causes an issue when the API whan to access to
+# the elastic certs (owner : 1000:1000)
+# USER nextjs
+
+RUN mkdir /app/db 
+RUN mkdir /app/certs
 
 EXPOSE 3000
 

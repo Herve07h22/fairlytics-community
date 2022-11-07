@@ -11,8 +11,14 @@ import { HostStats } from "domain/analytics/models/HostStats";
 export class ElasticStatsRepository implements StatsRepository {
   private esClient: Client;
   constructor(private FAIRLYTICS_INDEX_NAME = "fairlytics") {
-    console.log("Certificat  :", process.env.ELASTIC_CERT);
-    console.log("ELASTIC_USERNAME  :", process.env.ELASTIC_USERNAME);
+    !process.env.ELASTIC_USERNAME &&
+      console.error("ELASTIC_USERNAME is not set");
+    !process.env.ELASTIC_PASSWORD &&
+      console.error("ELASTIC_PASSWORD is not set");
+    !process.env.ELASTIC_CERT && console.error("ELASTIC_CERT is not set");
+
+    console.log("ELASTIC_CERT :", process.env.ELASTIC_CERT);
+    console.log("ELASTIC_USERNAME :", process.env.ELASTIC_USERNAME);
 
     this.esClient = new Client({
       node: "https://elasticsearch:9200",
@@ -25,10 +31,6 @@ export class ElasticStatsRepository implements StatsRepository {
         ca: fs.readFileSync(process.env.ELASTIC_CERT || ""),
       },
     });
-    !process.env.ELASTIC_USERNAME &&
-      console.error("ELASTIC_USERNAME is not set");
-    !process.env.ELASTIC_PASSWORD &&
-      console.error("ELASTIC_PASSWORD is not set");
   }
 
   async getStats(publicKey: string, dateInterval: string) {

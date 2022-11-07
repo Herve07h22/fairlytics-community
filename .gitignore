@@ -9,3 +9,4 @@ certificats
 elasticsearch/certs/*
 db/*
 test.db
+nginx.conf

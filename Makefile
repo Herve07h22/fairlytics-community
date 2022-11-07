@@ -65,4 +65,7 @@ install-ssl:
 	@docker exec -it certbot-fairlytics certbot certonly --webroot -w /var/www/certbot
 	@echo "Allowing nginx to read the certificate"
 	@docker exec -it nginx-fairlytics sh -c "chown -R nginx:nginx /etc/letsencrypt/*"
+	@echo "Updating nginx.conf"
+	@docker-compose restart nginx
+	@cp ./nginx/nginx.conf.https ./nginx/nginx.conf 
 	@echo "----------------------------------------------------------------"

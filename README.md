@@ -42,14 +42,9 @@ Les variables à personnaliser sont :
 
 `FAIRLYTICS_URL` doit référencer le nom de domaine.
 
-Pour Debian il faut positionner [max_map_count](https://stackoverflow.com/questions/51445846/elasticsearch-max-virtual-memory-areas-vm-max-map-count-65530-is-too-low-inc) :
-
-```
-sysctl -w vm.max_map_count=262144
-docker system prune -a
-```
-
-Editer le fichier `/etc/sysctl.conf` et mettre vm.max_map_count à 262144.
+Pour Debian il faut positionner [max_map_count](https://stackoverflow.com/questions/51445846/elasticsearch-max-virtual-memory-areas-vm-max-map-count-65530-is-too-low-inc).
+C'est fait automatiquement dans le script d'installation, mais ré-initialisé à chaque redémarrage.
+Pour rendre cela pérenne, éditer le fichier `/etc/sysctl.conf` et mettre vm.max_map_count à 262144.
 
 ```
 ./install.sh

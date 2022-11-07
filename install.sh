@@ -19,7 +19,7 @@ echo "$OS"
 if [ "$OS" = "Debian" ]
 then
     echo "Setting vm.max_map_count for Linux Debian"
-    sysctl -w vm.max_map_count=262144
+    sudo sysctl -w vm.max_map_count=262144
 fi
 
 if [ "$OS" = "Darwin" ]

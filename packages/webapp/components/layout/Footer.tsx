@@ -28,7 +28,7 @@ export const Footer: React.FC<{}> = ({}) => (
             <Link href="/doc/cgu">CGU</Link>
           </li>
           <li>
-            <Link href="/doc/fonctionnement">Github</Link>
+            <Link href="https://github.com/Herve07h22/fairlytics-community">Github</Link>
           </li>
         </ul>
     

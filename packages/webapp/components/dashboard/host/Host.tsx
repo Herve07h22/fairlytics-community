@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Row, Typography } from "antd";
-import { useStore } from "store/store";
 
 import DailyVisits from "../dailyVisits/DailyVisits";
 import Countries from "../countries/Countries";

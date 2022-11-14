@@ -22,6 +22,13 @@ then
     sudo sysctl -w vm.max_map_count=262144
 fi
 
+if [ "$OS" = "Ubuntu" ]
+then
+    echo "Setting vm.max_map_count for Linux Ubuntu"
+    sudo sysctl -w vm.max_map_count=262144
+fi
+
+
 if [ "$OS" = "Darwin" ]
 then
     echo "Happy to have a Mac"

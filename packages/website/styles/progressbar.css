@@ -1,0 +1,11 @@
+.fairlytics-progress-bar {
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:3px;
+    background-color: rgb(62, 0, 238, 0.7);
+  }
+
+  .fairlytics-views {
+    font-weight: 500;
+  }

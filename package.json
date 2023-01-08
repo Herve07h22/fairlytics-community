@@ -2,6 +2,7 @@
   "private": true,
   "workspaces": [
     "packages/webapp",
+    "packages/website",
     "packages/cli"
   ],
   "engines": {
@@ -9,6 +10,7 @@
   },
   "scripts": {
     "test": "yarn workspaces run test",
+    "build-website": "yarn workspace @fairlytics/website run build && yarn workspace @fairlytics/website run next export",
     "restore": "yarn workspace @fairlytics/cli run restore",
     "backup": "yarn workspace @fairlytics/cli run backup",
     "dev": "yarn workspace @fairlytics/webapp run dev"

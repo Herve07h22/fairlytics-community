@@ -9,16 +9,24 @@ export class SecureKeyRepositorySql implements SecureKeyRepository {
     this.db = BetterSqlite3(process.env.FAIRLYTICS_SQLITE_DB || dbName);
     // check if table "fairlytics_keys" exists
     const createTableStatement = this.db.prepare(
-      "CREATE TABLE IF NOT EXISTS fairlytics_keys ( public_key TEXT PRIMARY_KEY, private_key TEXT NOT NULL UNIQUE)"
+      "CREATE TABLE IF NOT EXISTS fairlytics_keys ( public_key TEXT PRIMARY_KEY, private_key TEXT NOT NULL UNIQUE, email TEXT)"
     );
     createTableStatement.run();
   }
 
   async set(key: FairlyticsKey) {
     const insertStatement = this.db.prepare(
-      "INSERT INTO fairlytics_keys (public_key, private_key) VALUES (?, ?)"
+      "INSERT INTO fairlytics_keys (public_key, private_key, email) VALUES (?, ?, ?)"
     );
-    const info = insertStatement.run(key.publicKey, key.privateKey);
+    const info = insertStatement.run(key.publicKey, key.privateKey, key.email);
+  }
+
+  getKeysByEmail(email: string) {
+    const getKeyStatement = this.db.prepare(
+      "SELECT * FROM fairlytics_keys WHERE email=?"
+    );
+    const getKeyStatementResult = getKeyStatement.get(email);
+    return getKeyStatementResult;
   }
 
   async getPublicKey(secretKey: string) {

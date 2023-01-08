@@ -6,7 +6,11 @@ it("A new key can be stored in the database", async () => {
     .unlink("test.db")
     .catch(() => "File test.db doesnt exist. Skipping.");
   const repo = new SecureKeyRepositorySql("test.db");
-  await repo.set({ publicKey: "test-public", privateKey: "test-private" });
+  await repo.set({
+    publicKey: "test-public",
+    privateKey: "test-private",
+    email: "fairlytics&test.test",
+  });
   const retrievedPublicKey = await repo.getPublicKey("test-private");
   expect(retrievedPublicKey).toBe("test-public");
 });

@@ -1,4 +1,4 @@
-version: '3.2'
+version: '3'
 
 services:
   elasticsearch:
@@ -87,6 +87,15 @@ services:
     expose:
       - 3000
 
+  cli:
+    image: cli-fairlytics
+    container_name: cli-fairlytics
+    volumes:
+      - ./elasticsearch/certs:/usr/certs
+      - ./packages/cli/backups:/usr/backups
+    stdin_open: true
+    tty: true
+
   certbot:
     image: certbot/certbot
     container_name: certbot-fairlytics
@@ -100,3 +109,7 @@ services:
 volumes:
   elasticsearch:
   certbot_www:
+
+networks:
+  default:
+    name: fairlytics

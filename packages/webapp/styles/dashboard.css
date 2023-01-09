@@ -15,3 +15,10 @@
   word-break: break-all;
 }
 
+.site-header-logo {
+	display: flex;
+	align-items: center;
+	font-size:xx-large;
+	font-weight: bold;
+	color: rgb(62, 0, 238);;
+}

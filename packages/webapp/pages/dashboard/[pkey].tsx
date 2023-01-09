@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/Dashboard.module.css";
 import { Layout } from "antd";
 import { NextPage } from "next";
 import Analytics from "components/dashboard/Analytics";
@@ -22,7 +21,7 @@ const Dashboard: NextPage = () => {
         <Layout>
           <Analytics fairlyticsKey={pkey} />
           <Layout.Footer style={{ textAlign: "center" }}>
-            Fairlytics 2022 - Powered by{" "}
+            Fairlytics 2023 - Powered by{" "}
             <a href="https://camilab.co">Camilab</a> - v2.0.1
           </Layout.Footer>
         </Layout>

@@ -66,7 +66,7 @@ then
     exit 1
 fi
 
-echo "Building website"
+echo "Building webapp"
 mkdir -p ./db
 mkdir -p ./certificats
 cp ./nginx/nginx.conf.http ./nginx/nginx.conf 
@@ -76,7 +76,11 @@ echo ELASTIC_PASSWORD=${ELASTIC_PASSWORD} >> packages/webapp/.env
 echo ELASTIC_CERT=/app/certs/http_ca.crt >> packages/webapp/.env
 echo NEXT_PUBLIC_FAIRLYTICS_URL=${FAIRLYTICS_URL} >> packages/webapp/.env
 echo FAIRLYTICS_SQLITE_DB=${FAIRLYTICS_SQLITE_DB} >> packages/webapp/.env
-docker build -f Dockerfile-webapp -t webapp-fairlytics  .
+docker build -f packages/webapp/Dockerfile -t webapp-fairlytics  .
+
+echo "Building cli"
+docker build -f packages/cli/Dockerfile -t cli-fairlytics  .
+
 
 echo "Installing ElasticSearch"
 make install-es

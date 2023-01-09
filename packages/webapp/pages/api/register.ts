@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import Cors from "cors";
-import { FairlyticsKey } from "domain/sites/models/FairlyticsKey";
 import { dependencies } from "adapters";
 import { register } from "domain/sites/usecases/register";
 import { Result } from "domain/helpers/Result";

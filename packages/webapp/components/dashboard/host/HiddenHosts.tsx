@@ -3,6 +3,9 @@ import { Alert } from "antd";
 import { HostStats } from "domain/analytics/models/HostStats";
 
 const HiddenHosts: React.FC<{ data: HostStats[] }> = ({ data }) => {
+
+  if (data.length === 0) return null
+
   const listeDesNoms = (
     <div>
       Les mesures d&apos;audience des sites suivants sont masquées car ils

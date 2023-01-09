@@ -45,8 +45,8 @@ start:
 	@echo "Starting fairlytics"
 	@docker compose up -d --no-recreate logstash elasticsearch nginx webapp
 
-restore:
-	yarn restore
+cli:
+	@docker compose run cli sh
 
 backup:
 	yarn backup

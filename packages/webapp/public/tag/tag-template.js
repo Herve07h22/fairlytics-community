@@ -9,31 +9,36 @@
       ? fairlytiscScriptElement.attributes.fairlyticskey.value
       : "";
 
+  const bodyElement = document.querySelector("body");
+  var oldHref = "";
+
   function hit() {
-    var xhr = new XMLHttpRequest();
-    const payload = {
-      hostname: window.location.hostname, // Le nom de l'hôte (sans son numéro de port).
-      href: window.location.href, // L'URL entière
-      page: window.location.pathname,
-      utm: window.location.search,
-      referrer: document.referrer,
-      fairlyticskey: fairlyticskey,
-    };
-    xhr.open("POST", "@@TAG_URL@@", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(JSON.stringify(payload));
+    const newHref = document.location.href;
+    if (oldHref !== newHref) {
+      oldHref = newHref;
+      var xhr = new XMLHttpRequest();
+      const payload = {
+        hostname: document.location.hostname,
+        href: newHref,
+        page: document.location.pathname,
+        utm: document.location.search,
+        referrer: document.referrer,
+        fairlyticskey: fairlyticskey,
+      };
+      xhr.open("POST", "@@TAG_URL@@", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(JSON.stringify(payload));
+    }
   }
 
-  var oldHref;
-
-  return new MutationObserver((mutations) =>
-    mutations.forEach(
-      () =>
-        oldHref !== document.location.href &&
-        ((oldHref = document.location.href), hit())
-    )
-  ).observe(document.querySelector("body"), {
-    childList: true,
-    subtree: true,
-  });
+  window.onload = () => {
+    if (oldHref === "") hit();
+    new MutationObserver((mutations) => mutations.forEach(hit)).observe(
+      bodyElement,
+      {
+        childList: true,
+        subtree: true,
+      }
+    );
+  };
 })();

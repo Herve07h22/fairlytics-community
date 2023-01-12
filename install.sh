@@ -74,8 +74,14 @@ touch packages/webapp/.env
 echo ELASTIC_USERNAME=${ELASTIC_USERNAME} > packages/webapp/.env
 echo ELASTIC_PASSWORD=${ELASTIC_PASSWORD} >> packages/webapp/.env
 echo ELASTIC_CERT=/app/certs/http_ca.crt >> packages/webapp/.env
-echo NEXT_PUBLIC_FAIRLYTICS_URL=${FAIRLYTICS_URL} >> packages/webapp/.env
+echo FAIRLYTICS_URL=${FAIRLYTICS_URL} >> packages/webapp/.env
+echo FAIRLYTICS_LANDINGPAGE_URL=${FAIRLYTICS_LANDINGPAGE_URL} >> packages/webapp/.env
 echo FAIRLYTICS_SQLITE_DB=${FAIRLYTICS_SQLITE_DB} >> packages/webapp/.env
+echo MAILGUN_API_KEY=${MAILGUN_API_KEY} >> packages/webapp/.env
+echo MAILGUN_DOMAIN=${MAILGUN_DOMAIN} >> packages/webapp/.env
+echo MAILGUN_SENDER=${MAILGUN_SENDER} >> packages/webapp/.env
+echo MAILGUN_URL=${MAILGUN_URL} >> packages/webapp/.env
+
 docker build -f packages/webapp/Dockerfile -t webapp-fairlytics  .
 
 echo "Building cli"

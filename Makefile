@@ -37,6 +37,7 @@ test:
 	curl -XPOST http://localhost/hit -H "Content-Type: application/json" -d @logstash/test/playload_utm.json
 	curl -XPOST http://localhost/hit -H "Content-Type: application/json" -d @logstash/test/playload_utm2.json
 	curl -XPOST http://localhost/hit -H "Content-Type: application/json" -d @logstash/test/playload_gclid.json
+	curl -XPOST http://localhost/api/register -H "Content-Type: application/json" -d '{"email":"${MAILGUN_SENDER}"}'
 
 stop:
 	@docker compose down

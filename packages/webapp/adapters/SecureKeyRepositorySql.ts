@@ -21,12 +21,19 @@ export class SecureKeyRepositorySql implements SecureKeyRepository {
     const info = insertStatement.run(key.publicKey, key.privateKey, key.email);
   }
 
-  getKeysByEmail(email: string) {
+  async getKeysByEmail(email: string): Promise<FairlyticsKey | null> {
     const getKeyStatement = this.db.prepare(
       "SELECT * FROM fairlytics_keys WHERE email=?"
     );
     const getKeyStatementResult = getKeyStatement.get(email);
-    return getKeyStatementResult;
+    return getKeyStatementResult?.public_key &&
+      getKeyStatementResult?.private_key
+      ? {
+          email,
+          privateKey: getKeyStatementResult.private_key,
+          publicKey: getKeyStatementResult.public_key,
+        }
+      : null;
   }
 
   async getPublicKey(secretKey: string) {

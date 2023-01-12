@@ -1,7 +1,7 @@
 import { fillHtmlTemplate } from "../MaigunEmailService";
 
 it("A template can be filled with data", async () => {
-  const filledTemplate = fillHtmlTemplate("mailgunTemplate.html", {
+  const filledTemplate = fillHtmlTemplate("./adapters/mailgunTemplate.html", {
     publicKey: "1234567",
     tagUrl: "https://app.fairlytics.tech/tag/tag.js",
     dashboardUrl: "https://app.fairlytics.tech/dashboard/987654",

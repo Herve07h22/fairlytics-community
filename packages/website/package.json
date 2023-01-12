@@ -5,6 +5,7 @@
   "author": "Herve07h22",
   "private": true,
   "scripts": {
+    "test": "echo \"No test specified for this package\" ",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

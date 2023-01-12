@@ -81,6 +81,7 @@ echo MAILGUN_API_KEY=${MAILGUN_API_KEY} >> packages/webapp/.env
 echo MAILGUN_DOMAIN=${MAILGUN_DOMAIN} >> packages/webapp/.env
 echo MAILGUN_SENDER=${MAILGUN_SENDER} >> packages/webapp/.env
 echo MAILGUN_URL=${MAILGUN_URL} >> packages/webapp/.env
+echo MAILGUN_TEMPLATE=${MAILGUN_TEMPLATE} >> packages/webapp/.env
 
 docker build -f packages/webapp/Dockerfile -t webapp-fairlytics  .
 

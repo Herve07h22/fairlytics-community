@@ -26,7 +26,7 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-COPY --from=builder /app/packages/webapp/adapters/*.html .
+COPY --from=builder /app/adapters/*.html .
 
 # TODO : changing to nextjs user causes an issue when the API whan to access to
 # the elastic certs (owner : 1000:1000)

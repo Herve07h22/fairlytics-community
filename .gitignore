@@ -2,7 +2,7 @@
 elasticsearch.yml
 .env
 .DS_Store
-**/backups/*.json
+**/backups/*
 node_modules
 nginx/nginx.conf.lemien
 certificats

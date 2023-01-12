@@ -4,6 +4,7 @@ FROM node:16-alpine AS builder
 RUN apk add --no-cache libc6-compat curl
 WORKDIR /app
 COPY ./packages/webapp .
+#TODO : split in 2 steps to get better perf with cache
 RUN yarn && yarn build
 
 # If using npm comment out above and use below instead

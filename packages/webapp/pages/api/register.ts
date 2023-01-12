@@ -5,12 +5,14 @@ import { register } from "domain/sites/usecases/register";
 import { Result } from "domain/helpers/Result";
 
 // This API is called from the landing page. So we have to handle CORS
+// TODO : apply rate-limiter
+// https://kittygiraudel.com/2022/05/16/rate-limit-nextjs-api-routes/
 
 // Initializing the cors middleware
 // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
 const cors = Cors({
   methods: ["POST"],
-  origin: "https://fairlytics.tech",
+  origin: process.env.FAIRLYTICS_LANDINGPAGE_URL || "https://fairlytics.tech",
 });
 
 // Helper method to wait for a middleware to execute before continuing

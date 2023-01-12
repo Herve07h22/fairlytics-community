@@ -67,3 +67,10 @@ install-ssl:
 	@cp ./nginx/nginx.conf.https ./nginx/nginx.conf
 	@docker-compose restart nginx
 	@echo "----------------------------------------------------------------"
+
+activate-ssl:
+	@echo "Allowing nginx to read the certificate"
+	@docker exec -it nginx-fairlytics sh -c "chown -R nginx:nginx /etc/letsencrypt/*"
+	@echo "Updating nginx.conf"
+	@cp ./nginx/nginx.conf.https ./nginx/nginx.conf
+	@docker-compose restart nginx

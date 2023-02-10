@@ -5,8 +5,8 @@ export const Logo: React.FC<{}> = () => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     x="0"
     y="0"
-    width="2rem"
-    height="2rem"
+    width="48"
+    height="48"
     viewBox="0, 0, 90, 90"
   >
     <g id="03dfe025-5c70-42e2-9122-dc60b02d9a21">

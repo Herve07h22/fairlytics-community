@@ -3,6 +3,7 @@ version: '3'
 services:
   elasticsearch:
     container_name: elasticsearch-fairlytics
+    restart: unless-stopped
     build:
       context: elasticsearch/
       args:
@@ -20,6 +21,7 @@ services:
   
   logstash:
     container_name: logstash-fairlytics
+    restart: unless-stopped
     build:
       context: logstash/
       args:
@@ -43,7 +45,7 @@ services:
       - 8080
       - 9200
     environment:
-      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+      LS_JAVA_OPTS: "-Xmx512m -Xms512m"
       ELASTIC_PASSWORD: $ELASTIC_PASSWORD
       SESSION_DURATION: $SESSION_DURATION
       FAIRLYTICS_SALT: $FAIRLYTICS_SALT

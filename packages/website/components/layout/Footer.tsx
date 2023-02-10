@@ -5,12 +5,12 @@ export const Footer: React.FC<{}> = ({}) => (
     <div className="container">
       <div className="site-footer-inner has-top-divider">
       <div className="footer-copyright">
-          &copy; 2022 Fairlytics, fabriqué en Normandie
+          &copy; 2023 Fairlytics, fabriqué en Normandie
         </div>
        
         <ul className="footer-links list-reset">
           <li>
-            <Link href="/doc/installer">Installer</Link>
+            <Link href="/">Installer</Link>
           </li>
           <li>
             <Link href="/doc/gratuit">Pourquoi est-ce gratuit ?</Link>
@@ -22,7 +22,7 @@ export const Footer: React.FC<{}> = ({}) => (
 
         <ul className="footer-links list-reset">
           <li>
-            <Link href="/doc/qui-sommes-nous">Nous contacter</Link>
+            <Link href="https://www.camilab.co/contact/">Nous contacter</Link>
           </li>
           <li>
             <Link href="/doc/cgu">CGU</Link>

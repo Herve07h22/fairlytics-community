@@ -95,14 +95,14 @@ const Home: NextPage = () => {
             comment="C'est scandaleux de se priver d'installer des traceurs alors qu'ils permettent de vendre des publicités à prix d'or."
           />
           <Testimonial
-            happyUser="M. Zuckerberg"
-            image="testimonial-04.jpg"
-            comment="C'est scandaleux de se priver d'installer des traceurs alors qu'ils permettent de vendre des publicités à prix d'or."
+            happyUser="S. Pichai"
+            image="testimonial-05.jpg"
+            comment="Aucun avenir ! Mieux vaut espionner constamment les internautes pour leur vendre des services sur-mesure."
           />
           <Testimonial
-            happyUser="M. Zuckerberg"
-            image="testimonial-04.jpg"
-            comment="C'est scandaleux de se priver d'installer des traceurs alors qu'ils permettent de vendre des publicités à prix d'or."
+            happyUser="J. Bezos"
+            image="testimonial-06.jpg"
+            comment="Solution sans intérêt. Pourquoi se plier à cette réglementation RGPD absurde ?"
           />
         </TestimonialContainer>
         <CallToInstall />

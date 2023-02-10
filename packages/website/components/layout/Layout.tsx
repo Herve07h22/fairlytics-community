@@ -28,7 +28,7 @@ export const Layout: React.FC<{
         </div>
       </section>
 
-      <section className="container mt-48">{children}</section>
+      <section className="container mt-48 mb-72">{children}</section>
 
 { displayCta && <CallToInstall />}
 

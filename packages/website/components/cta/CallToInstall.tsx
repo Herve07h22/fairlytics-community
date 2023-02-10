@@ -12,7 +12,7 @@ export const CallToInstall:React.FC<{}> = () => (
             Libérez vos utilisateurs des cookies !
           </h2>
           <p className="section-paragraph">
-            Essayez gratuitement Fairlytics sur vos sites Internet.
+            Mesurez gratuitement l&apos;audience de vos sites Internet avec Fairlytics.
           </p>
         </div>
 

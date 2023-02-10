@@ -7,6 +7,8 @@
     fairlytiscScriptElement &&
     "fairlyticskey" in fairlytiscScriptElement.attributes
       ? fairlytiscScriptElement.attributes.fairlyticskey.value
+      : "data-fairlyticskey" in fairlytiscScriptElement.attributes
+      ? fairlytiscScriptElement.attributes["data-fairlyticskey"].value
       : "";
 
   const bodyElement = document.querySelector("body");

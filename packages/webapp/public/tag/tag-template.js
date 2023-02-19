@@ -18,7 +18,6 @@
     const newHref = document.location.href;
     if (oldHref !== newHref) {
       oldHref = newHref;
-      var xhr = new XMLHttpRequest();
       const payload = {
         hostname: document.location.hostname,
         href: newHref,
@@ -27,9 +26,7 @@
         referrer: document.referrer,
         fairlyticskey: fairlyticskey,
       };
-      xhr.open("POST", "@@TAG_URL@@", true);
-      xhr.setRequestHeader("Content-Type", "application/json");
-      xhr.send(JSON.stringify(payload));
+      navigator.sendBeacon("@@TAG_URL@@", JSON.stringify(payload));
     }
   }
 

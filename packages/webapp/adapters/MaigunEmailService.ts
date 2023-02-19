@@ -45,7 +45,7 @@ export class MaigunEmailService implements EmailService {
       html: fillHtmlTemplate(this.templateFile, {
         publicKey: key.publicKey,
         tagUrl: `${this.fairlyticsUrl}/tag/tag.js`,
-        dashboardUrl: `${this.fairlyticsUrl}/dashboard/${key.privateKey}`,
+        dashboardUrl: `${this.fairlyticsUrl}/${key.privateKey}`,
         landingUrl: this.fairlyticsLandingPageUrl,
       }),
     };

@@ -1,9 +1,8 @@
 # Fairlytics web application
 
 This is a [Next.js](https://nextjs.org/) project. It contains :
-- a public landing page `/`
-- some documentation mdx pages `/doc`, that might call a React `<Register />` component.
-- the private dashboard `/dashboard` to get the analytics of a set of websites.
+- the private dashboard `/<private key>` to get the analytics of a set of websites.
+- some documentation mdx pages `/doc`.
 
 
 ## Getting Started

@@ -16,6 +16,8 @@ import Image from "next/image";
 import screenshotPic from "../public/images/screenshot.png";
 import { Register } from "../components/registration/presentation/Register";
 import { SEO } from "components/layout/SEO";
+import Link from "next/link";
+import { PricingSection } from "components/pricing/PricingSection";
 
 const Home: NextPage = () => {
   return (
@@ -33,7 +35,7 @@ const Home: NextPage = () => {
                 <p className="hero-paragraph">
                   Obtenez les statistiques de fréquentation de votre site
                   Internet en respectant la vie privée de vos visiteurs. Pas de
-                  cookie. Pas de traceur.
+                  cookie. Pas de traceur. 100% open-source. Hébergé en France.
                 </p>
 
                 <Register />
@@ -71,8 +73,13 @@ const Home: NextPage = () => {
           />
           <Feature
             icon={<EnhanceIcon />}
-            title="Rapide"
-            content="Fairlytics ne ralentit pas votre site. Il s'exécute en arrière plan, toujours après le chargement de vos textes et vos images."
+            title="100% open-source"
+            content={
+              <span>
+                Le code de Fairlytics est <Link href="https://github.com/Herve07h22/fairlytics-community">public</Link>.
+                Les algorithmes de collecte et de stockage sont transparents et auditables.
+              </span>
+            }
           />
           <Feature
             icon={<TodolistIcon />}
@@ -87,6 +94,8 @@ const Home: NextPage = () => {
         >
           <Image src={screenshotPic} alt="Fairlytics screenshot" />
         </FeaturesContainer>
+
+        <PricingSection title="Un tarif unique et ultra-simple !" />
 
         <TestimonialContainer>
           <Testimonial

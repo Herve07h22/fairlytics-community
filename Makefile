@@ -44,7 +44,8 @@ stop:
 
 start:
 	@echo "Starting fairlytics"
-	@docker compose up -d --no-recreate logstash elasticsearch nginx webapp
+	@docker compose up -d --no-recreate logstash elasticsearch
+	@docker compose up -d nginx webapp
 
 cli:
 	@docker compose run cli sh

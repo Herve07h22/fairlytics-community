@@ -10,7 +10,7 @@ export const PricingItem: React.FC<{
   <div className="pricing-table">
     <div className="pricing-table-inner">
       <div className="pricing-table-main">
-        <div className="pricing-table-header is-revealing">
+        <div className="pricing-table-header">
           <div className="pricing-table-title mt-12 mb-8">{label}</div>
           <div className="pricing-table-price mb-32 pb-24">
             <span className="pricing-table-price-currency h4">€</span>

@@ -5,7 +5,7 @@ export const Testimonial: React.FC<{
   comment: string;
   happyUser: string;
 }> = ({ image, comment, happyUser }) => (
-  <div className="testimonial text-xs is-revealing">
+  <div className="testimonial text-xs">
     <div className="testimonial-inner">
       <div className="testimonial-main">
         <div className="testimonial-header">

@@ -101,6 +101,10 @@
     @include divider(after);
 }
 
+.relative {
+	position: relative;
+}
+
 .m-0 {
 	margin: 0;
 }

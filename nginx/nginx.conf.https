@@ -37,6 +37,15 @@ server {
         proxy_set_header    X-Forwarded-For     $proxy_add_x_forwarded_for;
     }
 
+    location /kibana {
+        resolver 127.0.0.11 valid=30s;
+        set $upstream_kibana kibana;
+        rewrite /kibana\/?(.*)$ /$1 break;
+        proxy_pass http://$upstream_kibana:5601;
+        proxy_set_header    Host                $http_host;
+        proxy_redirect      off;
+    }
+
     location / {
         proxy_pass http://web-app;
         proxy_set_header    Host                $http_host;

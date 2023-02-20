@@ -11,5 +11,6 @@ ENV ELASTIC_PASSWORD={$ELASTIC_PASSWORD}
 # Example: RUN elasticsearch-plugin install analysis-icu
 COPY ./config/elasticsearch.yml.fairlytics /usr/share/elasticsearch/config/elasticsearch.yml
 COPY ./config/mapping.json /usr/share/elasticsearch/config/mapping.json
+COPY ./config/alias.json /usr/share/elasticsearch/config/alias.json
 
 USER elasticsearch

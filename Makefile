@@ -13,7 +13,7 @@ install-es:
 	# TODO : persist the created elasticsearch.yml to prevent ES crash when container is re-created
 	@docker cp elasticsearch-fairlytics:/usr/share/elasticsearch/config/elasticsearch.yml  ./elasticsearch/config/
 	@while [ -z `docker exec -it elasticsearch-fairlytics /bin/bash -c "curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic:${ELASTIC_PASSWORD} https://elasticsearch:9200" | grep tagline ` ]; do sleep 2; done
-	@echo "Generating a new enrollment token. Copy it to kibana :"
+	@echo "Generating a new enrollment token. Use it with command 'make install-kibana' :"
 	@echo "------------------------------------------------------"
 	@docker exec -it elasticsearch-fairlytics /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
 	@echo "------------------------------------------------------"
@@ -22,9 +22,7 @@ install-kibana:
 	@docker compose up -d --no-recreate kibana
 	@echo "Waiting for Kibana to start..."
 	@while [ -z `docker logs kibana-fairlytics | grep code ` ]; do sleep 2; done
-	@echo "Go to this URL to configure Kibana :"
-	@echo "------------------------------------------------------"
-	@docker logs kibana-fairlytics | grep code
+	@docker exec -it -u root kibana-fairlytics /usr/share/kibana/bin/kibana-setup
 
 create-index:
 	@echo "Creating fairlytics index ..."
@@ -45,12 +43,15 @@ stop:
 	@docker compose down
 
 start:
-	@echo "Starting fairlytics"
+	@echo "Starting fairlytics (without kibana)"
 	@docker compose up -d --no-recreate logstash elasticsearch
 	@docker compose up -d nginx webapp
 
 cli:
 	@docker compose run cli sh
+
+kibana:
+	@docker compose up -d kibana
 
 backup:
 	yarn backup

@@ -58,6 +58,14 @@ services:
       context: kibana/
       args:
         ELK_VERSION: $ELK_VERSION
+    volumes:
+      - type: bind
+        source: ./elasticsearch/certs/http_ca.crt
+        target: /usr/share/kibana/config/http_ca.crt
+        read_only: true
+    environment:
+      ELASTICSEARCH_PASSWORD: $ELASTIC_PASSWORD
+      ELASTICSEARCH_USERNAME: $ELASTIC_USERNAME
     expose:
       - 5601
     depends_on:

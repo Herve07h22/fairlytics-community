@@ -65,7 +65,7 @@ install-ssl:
 	@docker-compose up -d --no-recreate logstash elasticsearch nginx webapp certbot
 	@echo "We'll using nginx to serve $(FAIRLYTICS_URL)/.well-known/acme-challenge/"
 	@echo "(that's the place certbot will write the challenge)"
-	@docker exec -it certbot-fairlytics certbot certonly --webroot -w /var/www/certbot --cert-name fairlytics
+	@docker exec -it certbot-fairlytics certbot certonly --webroot -w /var/www/certbot --cert-name fairlytics -d $(SSL_DOMAINS)
 	@echo "Allowing nginx to read the certificate"
 	@docker exec -it nginx-fairlytics sh -c "chown -R nginx:nginx /etc/letsencrypt/*"
 	@echo "Updating nginx.conf"

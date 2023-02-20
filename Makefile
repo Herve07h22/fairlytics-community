@@ -19,10 +19,11 @@ install-es:
 	@echo "------------------------------------------------------"
 
 install-kibana:
-	@docker compose up -d --no-recreate kibana
+	@docker compose up -d kibana
 	@echo "Waiting for Kibana to start..."
-	@while [ -z `docker logs kibana-fairlytics | grep code ` ]; do sleep 2; done
+	@while [ -z `docker logs kibana-fairlytics | grep http://kibana:5601 ` ]; do sleep 2; done
 	@docker exec -it -u root kibana-fairlytics /usr/share/kibana/bin/kibana-setup
+	@docker restart kibana
 
 create-index:
 	@echo "Creating fairlytics index ..."

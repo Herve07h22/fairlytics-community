@@ -83,10 +83,10 @@ echo MAILGUN_SENDER=${MAILGUN_SENDER} >> packages/webapp/.env
 echo MAILGUN_URL=${MAILGUN_URL} >> packages/webapp/.env
 echo MAILGUN_TEMPLATE=${MAILGUN_TEMPLATE} >> packages/webapp/.env
 
-docker build -f packages/webapp/Dockerfile -t webapp-fairlytics  .
+docker compose build webapp
 
 echo "Building cli"
-docker build -f packages/cli/Dockerfile -t cli-fairlytics  .
+docker compose build cli
 
 
 echo "Installing ElasticSearch"

@@ -13,12 +13,13 @@ install-es:
 	# TODO : persist the created elasticsearch.yml to prevent ES crash when container is re-created
 	@docker cp elasticsearch-fairlytics:/usr/share/elasticsearch/config/elasticsearch.yml  ./elasticsearch/config/
 	@while [ -z `docker exec -it elasticsearch-fairlytics /bin/bash -c "curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -u elastic:${ELASTIC_PASSWORD} https://elasticsearch:9200" | grep tagline ` ]; do sleep 2; done
-	@echo "Generating a new enrollment token. Use it with command 'make install-kibana' :"
+	@echo "Elasticsearch started."
+
+install-kibana:
+	@echo "Generating a new enrollment token."
 	@echo "------------------------------------------------------"
 	@docker exec -it elasticsearch-fairlytics /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
 	@echo "------------------------------------------------------"
-
-install-kibana:
 	@docker compose up -d kibana
 	@echo "Waiting for Kibana to start..."
 	@while [ -z `docker logs kibana-fairlytics | grep http://kibana:5601` ]; do sleep 2; done

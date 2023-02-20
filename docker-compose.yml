@@ -88,6 +88,8 @@ services:
       - logstash
 
   webapp:
+    build:
+      context: packages/webapp
     image: webapp-fairlytics
     container_name: webapp-fairlytics
     restart: unless-stopped
@@ -98,6 +100,8 @@ services:
       - 3000
 
   cli:
+    build:
+      context: packages/cli
     image: cli-fairlytics
     container_name: cli-fairlytics
     volumes:

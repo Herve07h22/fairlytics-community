@@ -9,7 +9,7 @@ const heebo = Heebo({ subsets: ['latin'] })
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Script src="https://9writers.com/tag/tag.js" />
+      <Script src="https://app.9writers.com/tag/tag.js" />
       <Component {...pageProps} />
     </>
   );

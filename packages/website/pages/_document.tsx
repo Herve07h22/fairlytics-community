@@ -8,7 +8,7 @@ export default function Document() {
         <Main />
         <NextScript />
         { //@ts-ignore
-        <div id="fairlytics-id-ajcu6jd9k7ysd6" fairlyticskey="5d3ebce9f116a5b68efab2f0d4d69a56" />
+        <div id="fairlytics-id-ajcu6jd9k7ysd6" data-fairlyticskey="5d3ebce9f116a5b68efab2f0d4d69a56" />
         }
       </body>
     </Html>

@@ -28,7 +28,9 @@ install-kibana:
 
 create-index:
 	@echo "Creating fairlytics index ..."
-	@docker exec -it elasticsearch-fairlytics /bin/bash -c "curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -XPUT -H Content-Type:application/json -d @/usr/share/elasticsearch/config/mapping.json -u elastic:${ELASTIC_PASSWORD} https://elasticsearch:9200/fairlytics"
+	@docker exec -it elasticsearch-fairlytics /bin/bash -c "curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -XPUT -H Content-Type:application/json -d @/usr/share/elasticsearch/config/mapping.json -u elastic:${ELASTIC_PASSWORD} https://elasticsearch:9200/fairlytics_1"
+	@echo "Creating fairlytics alias ..."
+	@docker exec -it elasticsearch-fairlytics /bin/bash -c "curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -XPOST -H Content-Type:application/json -d @/usr/share/elasticsearch/config/alias.json -u elastic:${ELASTIC_PASSWORD} https://elasticsearch:9200/_aliases"
 
 test:
 	@echo "Sending tests data similar to what should be sent by tag.js"

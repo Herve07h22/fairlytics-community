@@ -26,7 +26,7 @@ ReferrerStat & {
     ),
   },
   {
-    title: "Nombre",
+    title: "Vues",
     dataIndex: "views",
     render: (record) => <FormattedViewsNumber views={record.hits} />,
   },

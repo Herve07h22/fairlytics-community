@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Table } from "antd";
+import { Col } from "antd";
 import { BrowserStat } from "domain/analytics/models/HostStats";
 import { BorderedCard } from "../card/BorderedCard";
 import { Column, DataTable } from "../datatable/DataTable";
@@ -76,7 +76,7 @@ const Browsers: React.FC<{ browsers: BrowserStat[]; hits: number }> = ({
       ) : record.browser,
     },
     {
-      title: "Nombre",
+      title: "Vues",
       dataIndex: "vues",
       render: (record) => <FormattedViewsNumber views={record.hits} />,
     },

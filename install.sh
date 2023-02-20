@@ -69,7 +69,7 @@ fi
 echo "Building webapp"
 mkdir -p ./db
 mkdir -p ./certificats
-cp ./nginx/nginx.conf.http ./nginx/nginx.conf 
+cp -n ./nginx/nginx.conf.http ./nginx/nginx.conf 
 touch packages/webapp/.env
 echo ELASTIC_USERNAME=${ELASTIC_USERNAME} > packages/webapp/.env
 echo ELASTIC_PASSWORD=${ELASTIC_PASSWORD} >> packages/webapp/.env

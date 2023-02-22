@@ -7,7 +7,7 @@ import { FormattedViewsNumber } from "../datatable/FormattedNumber";
 import { withRatio } from "../datatable/withRatio";
 import { BackgroundProgress } from "../datatable/BackgroundProgress";
 
-type Device = "Scrapper" | "Smartphone" | "Desktop";
+type Device = "Scrapper" | "Mobile" | "Desktop";
 
 
 function classificationNavigateur(navigateur: string): Device {
@@ -26,7 +26,7 @@ function classificationNavigateur(navigateur: string): Device {
     formatedNavigateur.includes("miui") ||
     formatedNavigateur.includes("facebook")
   )
-    return "Smartphone";
+    return "Mobile";
 
   return "Desktop";
 }
@@ -51,7 +51,7 @@ const Browsers: React.FC<{ browsers: BrowserStat[]; hits: number }> = ({
       }
       return acc;
     },
-    { Scrapper: 0, Smartphone: 0, Desktop: 0 }
+    { Scrapper: 0, Mobile: 0, Desktop: 0 }
   );
 
   const tabPagesVues = (Object.keys(pagesVuesParDevice) as Device[]).map(

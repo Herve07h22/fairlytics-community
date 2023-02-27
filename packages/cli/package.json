@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"No test specified for this package\" ",
-    "backup": "dotenv cross-var \"elasticdump --overwrite --limit 1000 --input=%ELASTIC_URL_FROM% --output=./backups/fairlytics.json --type=data --searchBody=@./searchbody.json\"",
+    "backup": "dotenv cross-var \"elasticdump --overwrite --limit 1000 --input=%ELASTIC_URL_FROM% --output=./backups/fairlytics.json --type=data --input-ca=%ELASTIC_CERT_PATH_FROM% --searchBody=@./searchbody.json\"",
     "backup-and-transform": "dotenv cross-var \"elasticdump --overwrite --limit 1000 --input=%ELASTIC_URL_FROM% --transform='@./conversion-transform' --output=./backups/fairlytics.json --type=data --searchBody=@./searchbody.json\"",
     "restore": "dotenv cross-var \"elasticdump --limit 1000 --input=./backups/fairlytics.json --output=%ELASTIC_URL_TO% --type=data --output-ca=%ELASTIC_CERT_PATH_TO%\""
   },

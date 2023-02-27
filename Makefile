@@ -56,7 +56,7 @@ kibana:
 	@docker compose up -d kibana
 
 backup:
-	yarn backup
+	@docker compose run -i cli yarn backup
 
 install-ssl:
 	@echo "----------------------------------------------------------------"

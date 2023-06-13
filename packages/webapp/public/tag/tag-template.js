@@ -26,7 +26,10 @@
         referrer: document.referrer,
         fairlyticskey: fairlyticskey,
       };
-      navigator.sendBeacon("@@TAG_URL@@", JSON.stringify(payload));
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", "@@TAG_URL@@", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(JSON.stringify(payload));
     }
   }
 

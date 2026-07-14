@@ -49,8 +49,17 @@ Pour vérifier cela :
  doit indiquer l'adresse IP de votre serveur.
 
 Pour Debian il faut positionner [max_map_count](https://stackoverflow.com/questions/51445846/elasticsearch-max-virtual-memory-areas-vm-max-map-count-65530-is-too-low-inc).
-C'est fait automatiquement dans le script d'installation, mais ré-initialisé à chaque redémarrage.
-Pour rendre cela pérenne, éditer le fichier `/etc/sysctl.conf` et mettre vm.max_map_count à 262144.
+C'est fait automatiquement par le script d'installation, qui écrit aussi le réglage dans
+`/etc/sysctl.d/99-fairlytics.conf` afin qu'il soit ré-appliqué à chaque démarrage du serveur.
+
+Sans ce fichier, la valeur revient à sa valeur par défaut au premier redémarrage. Elasticsearch
+échoue alors sur son contrôle de démarrage :
+
+```
+bootstrap check failure : max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+```
+
+Il redémarre en boucle, et plus aucune donnée n'est collectée ni affichée.
 
 ```
 ./install.sh
@@ -74,6 +83,46 @@ make install-ssl
 Cette commande invoque le certbot de Lets Encrypt. Il va vous demander :
 - une adresse mail de contact (pour vous prévenir d'un problème, comme l'expiration du certificat)
 - le nom du domaine. Attention, ne pas mettre `https://`, mais seulement le nom sous la forme `votresupernomde.domaine`
+
+## Maintenance : les certificats d'Elasticsearch expirent
+
+Elasticsearch génère lui-même son certificat HTTP au premier démarrage. Ce certificat n'est
+valable que **2 ans**, et rien ne prévient de son expiration.
+
+Une fois expiré, Logstash ne peut plus écrire dans Elasticsearch :
+
+```
+Elasticsearch Unreachable: [https://elasticsearch:9200/]
+PKIX path validation failed: CertPathValidatorException: validity check failed
+```
+
+Sa file d'attente sature, et il se met à répondre `429 Too Many Requests` sur `/hit`. Comme une
+réponse 429 ne porte aucun en-tête CORS, les navigateurs des sites monitorés signalent une
+**erreur CORS trompeuse** : le vrai problème est le certificat, pas le CORS. Pendant ce temps,
+les visites ne sont plus enregistrées.
+
+Attention : la panne peut rester invisible longtemps après la date d'expiration. Tant que
+Logstash garde ses connexions TLS ouvertes, aucune nouvelle négociation n'a lieu. Le problème
+se déclenche en général au redémarrage suivant du serveur.
+
+Pour afficher les dates d'expiration :
+
+```
+make check-es-certs
+```
+
+Pour renouveler le certificat et son autorité de certification (les index ne sont pas touchés) :
+
+```
+make renew-es-certs
+```
+
+Cette commande régénère les certificats, met à jour l'autorité de certification utilisée par
+Logstash, la webapp, Kibana et le cli, puis redémarre Elasticsearch et Logstash.
+
+> Remarque : les certificats et la configuration générés par Elasticsearch vivent à l'intérieur
+> du conteneur. Un `docker restart` les conserve, mais une recréation du conteneur
+> (`docker compose up --force-recreate elasticsearch`) les perdrait.
 
 ## Anonymisation des données
 

@@ -26,6 +26,20 @@ install-kibana:
 	@docker exec -it -u root kibana-fairlytics /usr/share/kibana/bin/kibana-setup
 	@docker compose restart kibana
 
+renew-es-certs:
+	@echo "----------------------------------------------------------------"
+	@echo "Renewing the Elasticsearch HTTP certificate and its CA"
+	@echo "The indices are left untouched."
+	@echo "----------------------------------------------------------------"
+	@chmod +x ./elasticsearch/renew-certs.sh
+	@./elasticsearch/renew-certs.sh
+
+check-es-certs:
+	@echo "Expiry date of the Elasticsearch CA :"
+	@docker exec elasticsearch-fairlytics openssl x509 -in /usr/share/elasticsearch/config/certs/http_ca.crt -noout -dates
+	@echo "Expiry date of the HTTP certificate actually served :"
+	@docker exec elasticsearch-fairlytics /bin/bash -c "echo | openssl s_client -connect elasticsearch:9200 2>/dev/null | openssl x509 -noout -dates"
+
 create-index:
 	@echo "Creating fairlytics index ..."
 	@docker exec -it elasticsearch-fairlytics /bin/bash -c "curl --cacert /usr/share/elasticsearch/config/certs/http_ca.crt -XPUT -H Content-Type:application/json -d @/usr/share/elasticsearch/config/mapping.json -u elastic:${ELASTIC_PASSWORD} https://elasticsearch:9200/fairlytics_1"

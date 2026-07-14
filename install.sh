@@ -16,16 +16,16 @@ fi
 
 echo "$OS"
 
-if [ "$OS" = "Debian" ]
+if [ "$OS" = "Debian" ] || [ "$OS" = "Ubuntu" ]
 then
-    echo "Setting vm.max_map_count for Linux Debian"
+    echo "Setting vm.max_map_count for Linux $OS"
+    # Apply it now...
     sudo sysctl -w vm.max_map_count=262144
-fi
-
-if [ "$OS" = "Ubuntu" ]
-then
-    echo "Setting vm.max_map_count for Linux Ubuntu"
-    sudo sysctl -w vm.max_map_count=262144
+    # ...and persist it. Without this file the value is reset to its default on
+    # the next reboot, Elasticsearch then fails its bootstrap check ("max virtual
+    # memory areas vm.max_map_count [65530] is too low") and restarts endlessly.
+    echo "# Required by Elasticsearch (fairlytics)" | sudo tee /etc/sysctl.d/99-fairlytics.conf > /dev/null
+    echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.d/99-fairlytics.conf > /dev/null
 fi
 
 

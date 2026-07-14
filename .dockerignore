@@ -1,0 +1,15 @@
+# Le contexte de build de l'image webapp est la racine du monorepo.
+# On en exclut ce qui est lourd, régénérable, ou secret.
+**/node_modules
+**/.next
+.git
+.gitignore
+
+# Secrets et données : le .env racine n'est pas nécessaire dans l'image
+# (packages/webapp/.env, lui, est écrit par install.sh et doit y entrer).
+.env
+db
+certificats
+elasticsearch/certs
+backups
+packages/cli/backups

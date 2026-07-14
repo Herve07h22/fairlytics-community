@@ -1,14 +1,15 @@
 import React from "react";
 import { Row, Col, Spin } from "antd";
-import IntervalSelector from "./IntervalSelector";
+import PeriodSelector from "./PeriodSelector";
 import { Logo } from "components/icons/LogoIcon";
 import Link from "next/link";
+import { Period } from "../useElasticSearch";
 
 const FairlyticsHeader: React.FC<{
   loading: boolean;
-  interval: number;
-  setInterval: (i: number) => void;
-}> = ({ loading, interval, setInterval }) => {
+  period: Period;
+  setPeriod: (p: Period) => void;
+}> = ({ loading, period, setPeriod }) => {
   return (
     <Row justify="space-between" style={{ margin: "auto", maxWidth: "1200px" }}>
       <Col xs={0} md={4}>
@@ -19,8 +20,8 @@ const FairlyticsHeader: React.FC<{
           </Link>
         </div>
       </Col>
-      <Col xs={24} md={10} xl={8}>
-        <IntervalSelector interval={interval} setInterval={setInterval} />
+      <Col xs={24} md={18} xl={16}>
+        <PeriodSelector period={period} setPeriod={setPeriod} />
       </Col>
     </Row>
   );

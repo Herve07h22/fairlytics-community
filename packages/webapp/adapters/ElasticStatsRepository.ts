@@ -7,6 +7,11 @@ import {
 } from "@elastic/elasticsearch/lib/api/types";
 import * as fs from "fs";
 import { HostStats } from "domain/analytics/models/HostStats";
+import {
+  DateRange,
+  Granularity,
+  granularityOf,
+} from "domain/analytics/models/DateRange";
 
 export class ElasticStatsRepository implements StatsRepository {
   private esClient: Client;
@@ -33,14 +38,14 @@ export class ElasticStatsRepository implements StatsRepository {
     });
   }
 
-  async getStats(publicKey: string, dateInterval: string) {
+  async getStats(publicKey: string, range: DateRange) {
     try {
       const result: SearchResponse<
         unknown,
         Record<string, AggregationsAggregate>
       > = await this.esClient.search({
         index: this.FAIRLYTICS_INDEX_NAME,
-        ...query(publicKey, dateInterval),
+        ...query(publicKey, range),
       });
       const { aggregations } = result;
       return {
@@ -53,12 +58,18 @@ export class ElasticStatsRepository implements StatsRepository {
   }
 }
 
-const query = (key: string, dateInterval: string) => ({
+const ES_CALENDAR_INTERVAL: Record<Granularity, string> = {
+  day: "1d",
+  week: "1w",
+  month: "1M",
+};
+
+const query = (key: string, dateRange: DateRange) => ({
   query: {
     bool: {
       filter: [
         { term: { fairlyticskey: key } },
-        { range: { "@timestamp": { gte: dateInterval, lte: "now" } } },
+        { range: { "@timestamp": { gte: dateRange.from, lte: dateRange.to } } },
       ],
     },
   },
@@ -125,7 +136,7 @@ const query = (key: string, dateInterval: string) => ({
         visiteurs: {
           date_histogram: {
             field: "@timestamp",
-            calendar_interval: "1d",
+            calendar_interval: ES_CALENDAR_INTERVAL[granularityOf(dateRange)],
           },
           aggs: {
             visiteurs_uniques: {
@@ -233,9 +244,9 @@ function mapQueryToModel(queryResult: EsQueryResult): HostStats[] {
       browserName: esBrowserName.key,
       hits: esBrowserName.doc_count,
     })),
-    dailyVisits: hote.visiteurs.buckets.map((visitor) => ({
-      day: visitor.key_as_string,
-      dayNumber: visitor.key,
+    visits: hote.visiteurs.buckets.map((visitor) => ({
+      date: visitor.key_as_string,
+      dateNumber: visitor.key,
       hits: visitor.doc_count,
       visitors: visitor.visiteurs_uniques.value,
       sessions: 0,

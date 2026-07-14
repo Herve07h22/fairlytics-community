@@ -1,0 +1,16 @@
+# Netlify déploie packages/website (le site vitrine). Le reste du monorepo — la
+# webapp, le cli, l'infra — ne le concerne pas.
+#
+# Sans cette règle, chaque PR déclenche un build et une Deploy Preview du site,
+# même quand elle ne touche que la webapp : des minutes de build gaspillées, et
+# un commentaire du bot Netlify sur des PR qui n'ont rien à voir avec le site.
+#
+# `ignore` annule le build quand la commande sort en 0, donc quand rien de ce qui
+# influence le site n'a changé. On y inclut le lockfile et le package.json racine,
+# dont dépendent les dépendances installées pour le build.
+#
+# Les autres réglages (build command, publish directory) restent ceux définis dans
+# l'interface Netlify : netlify.toml ne surcharge que ce qu'il déclare.
+
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- packages/website yarn.lock package.json netlify.toml"

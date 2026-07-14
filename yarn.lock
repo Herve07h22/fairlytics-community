@@ -791,11 +791,6 @@
   resolved "https://registry.yarnpkg.com/@next/font/-/font-13.1.6.tgz#2bf99e3321ec9b4d65781c0d0ebff072e8752e1a"
   integrity sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==
 
-"@next/mdx@^12.3.1":
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-12.3.1.tgz#7951f27e3fb178319adfcb68b8e6365dbae5c36e"
-  integrity sha512-b7G3CsAwyD/8Eo6uDjCCqNwEi68LTyo/JYPC0N2Yu3yl/iveMDCi03ME+9JsnFPr3DcjmGSKc1ioiYM4dJUkTg==
-
 "@next/mdx@^13.1.1":
   version "13.1.1"
   resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.1.1.tgz#ca3daf4903a97af65b994d87da342395e488f349"
@@ -1173,7 +1168,7 @@
   resolved "https://registry.yarnpkg.com/@types/mdurl/-/mdurl-1.0.2.tgz#e2ce9d83a613bacf284c7be7d491945e39e1f8e9"
   integrity sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==
 
-"@types/mdx@^2.0.0", "@types/mdx@^2.0.2":
+"@types/mdx@^2.0.0":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@types/mdx/-/mdx-2.0.2.tgz#64be19baddba4323ae7893e077e98759316fe279"
   integrity sha512-mJGfgj4aWpiKb8C0nnJJchs1sHBHn0HugkVfqqyQi7Wn6mBRksLeQsPOFvih/Pu8L1vlDzfe/LidhVHBeUk3aQ==
@@ -4065,11 +4060,6 @@ inline-style-parser@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.1.1.tgz#ec8a3b429274e9c0a1f1c4ffa9453a7fef72cea1"
   integrity sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==
-
-install@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/install/-/install-0.13.0.tgz#6af6e9da9dd0987de2ab420f78e60d9c17260776"
-  integrity sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==
 
 internal-slot@^1.0.3:
   version "1.0.3"

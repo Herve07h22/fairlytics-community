@@ -6,20 +6,24 @@ const nextConfig = {
   reactStrictMode: true,
   output: "standalone",
   swcMinify: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+  pageExtensions: ["ts", "tsx", "js", "jsx"],
+  experimental: {
+    // L'image est construite depuis la racine du monorepo : le traçage des fichiers
+    // doit partir de là pour retrouver les node_modules hissés par yarn workspaces.
+    outputFileTracingRoot: path.join(__dirname, "../../"),
   },
-  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  // webpack n'est pas une dépendance déclarée : on utilise l'instance que Next injecte.
+  webpack: (config, { webpack }) => {
+    // Moment (dépendance du DatePicker d'antd) embarque ses 130 locales par défaut.
+    // On ne garde que celles importées explicitement, soit "fr".
+    config.plugins.push(
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^\.\/locale$/,
+        contextRegExp: /moment$/,
+      })
+    );
+    return config;
+  },
 };
 
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-    // If you use `MDXProvider`, uncomment the following line.
-    // providerImportSource: "@mdx-js/react",
-  },
-});
-
-module.exports = withMDX(nextConfig);
+module.exports = nextConfig;

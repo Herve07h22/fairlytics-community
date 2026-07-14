@@ -84,6 +84,29 @@ Cette commande invoque le certbot de Lets Encrypt. Il va vous demander :
 - une adresse mail de contact (pour vous prévenir d'un problème, comme l'expiration du certificat)
 - le nom du domaine. Attention, ne pas mettre `https://`, mais seulement le nom sous la forme `votresupernomde.domaine`
 
+## Déployer une nouvelle version
+
+Sur le serveur, une seule commande :
+
+```
+make deploy
+```
+
+Elle récupère le code (`git pull`), reconstruit l'image et redémarre le service.
+
+`make start` ne suffit **pas** : `docker compose up` ne construit une image que si elle
+est absente. Si `webapp-fairlytics` existe déjà, l'ancienne image est réutilisée et le
+nouveau code n'est jamais déployé. `make deploy` reconstruit l'image explicitement.
+
+Il recharge aussi nginx : celui-ci résout `webapp:3000` une seule fois, au démarrage
+(`upstream web-app` dans `nginx/nginx.conf`), et le conteneur webapp change d'adresse IP
+quand il est recréé. Sans ce rechargement, nginx continue d'écrire vers l'ancienne IP et
+répond 502, jusqu'à son rechargement automatique — qui n'a lieu que toutes les 6 heures.
+
+L'image se construit depuis la racine du monorepo et installe les dépendances à partir du
+`yarn.lock` du workspace (`--frozen-lockfile`). C'est ce qui garantit que le serveur fait
+tourner exactement les versions contre lesquelles les tests passent.
+
 ## Maintenance : les certificats d'Elasticsearch expirent
 
 Elasticsearch génère lui-même son certificat HTTP au premier démarrage. Ce certificat n'est

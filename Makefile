@@ -63,6 +63,22 @@ start:
 	@docker compose up -d --no-recreate logstash elasticsearch
 	@docker compose up -d nginx webapp
 
+deploy:
+	@echo "----------------------------------------------------------------"
+	@echo "Deploying the webapp"
+	@echo "----------------------------------------------------------------"
+	@git pull
+	@echo "'make start' alone would NOT pick up the new code : docker compose"
+	@echo "only builds an image when it is missing. So we build it explicitly."
+	@docker compose build webapp
+	@docker compose up -d webapp
+	@echo "Reloading nginx : its 'web-app' upstream resolves webapp:3000 once,"
+	@echo "at startup, and the container just got a new IP address."
+	@docker compose exec nginx nginx -s reload
+	@echo "----------------------------------------------------------------"
+	@echo "Deployed."
+	@echo "----------------------------------------------------------------"
+
 cli:
 	@docker compose run cli sh
 

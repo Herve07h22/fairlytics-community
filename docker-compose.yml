@@ -86,7 +86,8 @@ services:
 
   webapp:
     build:
-      context: packages/webapp
+      context: .
+      dockerfile: packages/webapp/Dockerfile
     image: webapp-fairlytics
     container_name: webapp-fairlytics
     restart: unless-stopped

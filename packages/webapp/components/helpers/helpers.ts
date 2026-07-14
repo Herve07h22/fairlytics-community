@@ -1,13 +1,13 @@
-const sameDay = (d1: Date, d2: Date) =>
-  d1 &&
-  d2 &&
-  d1.getFullYear() === d2.getFullYear() &&
-  d1.getMonth() === d2.getMonth() &&
-  d1.getDate() === d2.getDate();
+import { Granularity } from "domain/analytics/models/DateRange";
 
-const formatDateDayMonth = (d: Date) => {
-  var options = { month: "numeric" as "numeric", day: "numeric" as "numeric" };
+// Les buckets sont datés en UTC : on les formate en UTC, sinon les fuseaux
+// à l'ouest de Greenwich afficheraient la veille.
+const formatBucketLabel = (d: Date, granularity: Granularity) => {
+  const options: Intl.DateTimeFormatOptions =
+    granularity === "month"
+      ? { month: "short", year: "2-digit", timeZone: "UTC" }
+      : { month: "numeric", day: "numeric", timeZone: "UTC" };
   return d.toLocaleDateString("fr-FR", options);
 };
 
-export { sameDay, formatDateDayMonth };
+export { formatBucketLabel };

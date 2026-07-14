@@ -1,12 +1,22 @@
 import { HostStats } from "domain/analytics/models/HostStats";
+import { DateRange, lastDays, nbDaysIn } from "domain/analytics/models/DateRange";
 import { Result } from "domain/helpers/Result";
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 
 const url = "/api/get_stats";
 
-function fetchAnalytics({ queryKey }: { queryKey: [string, string, number] }) {
-  const [, fairlyticsKey, interval] = queryKey;
+const DEFAULT_PRESET = 14;
+
+// Une période, éventuellement issue d'un des raccourcis "14 / 30 / 90 jours".
+export type Period = DateRange & { preset?: number };
+
+function fetchAnalytics({
+  queryKey,
+}: {
+  queryKey: [string, string, string, string];
+}) {
+  const [, fairlyticsKey, from, to] = queryKey;
   if (!fairlyticsKey) return { value: [] };
 
   return fetch(url, {
@@ -17,7 +27,8 @@ function fetchAnalytics({ queryKey }: { queryKey: [string, string, number] }) {
     },
     body: JSON.stringify({
       fairlyticsKey,
-      dateInterval: `now-${interval}d`,
+      from,
+      to,
     }),
   }).then((response) => {
     const data: Promise<Result<HostStats[]>> = response.json();
@@ -29,10 +40,13 @@ const useElasticSearch = (fairlyticsKey?: string) => {
   const [dashboardState, setDashboardState] = useState<DashboardState>(
     DashboardState.InitialLoading
   );
-  const [interval, setInterval] = useState(14);
+  const [period, setPeriod] = useState<Period>(() => ({
+    preset: DEFAULT_PRESET,
+    ...lastDays(DEFAULT_PRESET),
+  }));
 
   const query = useQuery(
-    ["get_stats", fairlyticsKey || "", interval],
+    ["get_stats", fairlyticsKey || "", period.from, period.to],
     fetchAnalytics,
     { keepPreviousData: true, enabled: !!fairlyticsKey, staleTime: 500 }
   );
@@ -49,7 +63,7 @@ const useElasticSearch = (fairlyticsKey?: string) => {
   }, [loading, datasetSize]);
 
   // Do not display "hidden" sites (nb of hits < minHitsLimit), except if it's the only one
-  const minHitsLimit = interval; // 1 hits / day
+  const minHitsLimit = nbDaysIn(period); // 1 hits / day
   const visibleSites = hostStats.filter((host) => host.hits >= minHitsLimit);
   const toDisplay = visibleSites.length > 0 ? visibleSites : [hostStats[0]];
   const toHide = hostStats.filter(
@@ -59,8 +73,8 @@ const useElasticSearch = (fairlyticsKey?: string) => {
   return {
     dashboardState,
     error,
-    interval,
-    setInterval,
+    period,
+    setPeriod,
     toDisplay,
     toHide,
   };

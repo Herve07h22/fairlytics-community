@@ -23,8 +23,8 @@ const Analytics: React.FC<{ fairlyticsKey: string }> = ({ fairlyticsKey }) => {
   const {
     dashboardState,
     error,
-    interval,
-    setInterval,
+    period,
+    setPeriod,
     toHide,
     toDisplay,
   } = useElasticSearch(fairlyticsKey);
@@ -38,15 +38,15 @@ const Analytics: React.FC<{ fairlyticsKey: string }> = ({ fairlyticsKey }) => {
     <>
       <Header style={headerStyle}>
         <FairlyticsHeader
-          interval={interval}
-          setInterval={setInterval}
+          period={period}
+          setPeriod={setPeriod}
           loading={dashboardState === DashboardState.loading}
         />
       </Header>
       <Content style={contentStyle}>
         <div>
           {toDisplay.map((h) => (
-            <Host key={h.hostname} data={h} interval={interval} />
+            <Host key={h.hostname} data={h} range={period} />
           ))}
 
           {<HiddenHosts data={toHide} />}

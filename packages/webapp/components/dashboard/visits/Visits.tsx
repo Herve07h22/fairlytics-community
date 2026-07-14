@@ -1,30 +1,26 @@
 import React from "react";
 import { Card, Col, Statistic, Row, Divider } from "antd";
-import {
-  TeamOutlined,
-  FileDoneOutlined,
-} from "@ant-design/icons";
+import { TeamOutlined, FileDoneOutlined } from "@ant-design/icons";
 import Chart from "../chart/Chart";
-import { formatDateDayMonth } from "../../helpers/helpers";
-import { formatTimeSeries } from "../../helpers/formatTimeSeries";
+import { formatBucketLabel } from "../../helpers/helpers";
 import { FormattedNumber } from "../datatable/FormattedNumber";
-import { DailyVisitsStat } from "domain/analytics/models/HostStats";
+import { VisitsStat } from "domain/analytics/models/HostStats";
+import { DateRange, Granularity } from "domain/analytics/models/DateRange";
+import { visitsTimeSeries } from "domain/analytics/models/VisitsTimeSeries";
 
-const DailyVisits: React.FC<{
-  dailyVisitsStat: DailyVisitsStat[];
-  interval: number;
-  hits:number,
-  visitors:number
-}> = ({ interval, dailyVisitsStat , hits, visitors}) => {
-  const xLabelsArray = dailyVisitsStat.map((v) => v.day);
-  const yDataArray = dailyVisitsStat.map((v) => v.visitors);
+const SERIE_LABEL: Record<Granularity, string> = {
+  day: "Visiteurs uniques par jour",
+  week: "Visiteurs uniques par semaine",
+  month: "Visiteurs uniques par mois",
+};
 
-  const { xLabelsArrayFormatted, yDataArrayFormatted } = formatTimeSeries({
-    format: `now-${interval}d`,
-    xLabelsArray,
-    yDataArray,
-  });
-
+const Visits: React.FC<{
+  visitsStat: VisitsStat[];
+  range: DateRange;
+  hits: number;
+  visitors: number;
+}> = ({ range, visitsStat, hits, visitors }) => {
+  const { granularity, buckets } = visitsTimeSeries(visitsStat, range);
 
   return (
     <Col span={24}>
@@ -49,22 +45,21 @@ const DailyVisits: React.FC<{
               />
             </Col>
             {/* space remains to add sessions */}
-            
           </Row>
         }
         style={{ marginBottom: "1rem", padding: 0 }}
         bordered={false}
       >
         <Chart
-          xLabelsArray={xLabelsArrayFormatted.map((d) => formatDateDayMonth(d))}
-          yDataArray={yDataArrayFormatted}
-          serieLabel="Visiteurs uniques"
+          xLabelsArray={buckets.map((b) =>
+            formatBucketLabel(b.start, granularity)
+          )}
+          yDataArray={buckets.map((b) => b.visitors)}
+          serieLabel={SERIE_LABEL[granularity]}
         />
       </Card>
     </Col>
   );
 };
 
-export default DailyVisits;
-
-
+export default Visits;

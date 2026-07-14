@@ -2,13 +2,18 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { dependencies } from "adapters";
 import { Result } from "domain/helpers/Result";
 import { HostStats } from "domain/analytics/models/HostStats";
+import { parseDateRange } from "domain/analytics/models/DateRange";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Result<HostStats[]>>
 ) {
   const fairlyticsKey = req.body.fairlyticsKey; // private key
-  const dateInterval = req.body.dateInterval;
+  const dateRange = parseDateRange(req.body.from, req.body.to);
+
+  if (!dateRange) {
+    return res.status(400).json({ error: "Invalid date range" });
+  }
 
   // What's public related to this private key ?
   const publicKey = await dependencies.secureKeyRepository.getPublicKey(
@@ -21,7 +26,7 @@ export default async function handler(
 
   const stats = await dependencies.statsDatatbase.getStats(
     publicKey,
-    dateInterval
+    dateRange
   );
   res.status(200).json(stats);
 }

@@ -5,9 +5,10 @@ export type PageStat = {
 };
 export type ReferrerStat = { pageUrl: string; hits: number };
 export type BrowserStat = { browserName: string; hits: number };
-export type DailyVisitsStat = {
-  day: string;
-  dayNumber: number;
+// Un bucket de la série temporelle : un jour, une semaine ou un mois selon la période demandée.
+export type VisitsStat = {
+  date: string;
+  dateNumber: number;
   hits: number;
   visitors: number;
   sessions: number;
@@ -24,7 +25,7 @@ export type HostStats = {
   pages: PageStat[];
   sources: ReferrerStat[];
   browsers: BrowserStat[];
-  dailyVisits: DailyVisitsStat[];
+  visits: VisitsStat[];
   hourlyProfil: HourlyVisitsStat[];
   countries: CountryStat[];
 };

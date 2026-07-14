@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Row, Typography } from "antd";
 
-import DailyVisits from "../dailyVisits/DailyVisits";
+import Visits from "../visits/Visits";
 import Countries from "../countries/Countries";
 import HourlyProfil from "../hourlyProfil/HourlyProfil";
 import Browsers from "../browsers/Browsers";
@@ -9,10 +9,11 @@ import MostCommonWay from "../mostCommonWay/MostCommonWay";
 import Pages from "../pages/Pages";
 import Sources from "../sources/Sources";
 import { HostStats } from "domain/analytics/models/HostStats";
+import { DateRange } from "domain/analytics/models/DateRange";
 
-const Host: React.FC<{ data: HostStats; interval: number }> = ({
+const Host: React.FC<{ data: HostStats; range: DateRange }> = ({
   data,
-  interval,
+  range,
 }) => {
   return (
     <Card
@@ -31,9 +32,9 @@ const Host: React.FC<{ data: HostStats; interval: number }> = ({
       }}
     >
       <Row gutter={[16, 16]} justify="space-around">
-        <DailyVisits
-          dailyVisitsStat={data.dailyVisits}
-          interval={interval}
+        <Visits
+          visitsStat={data.visits}
+          range={range}
           hits={data.hits}
           visitors={data.visitors}
         />

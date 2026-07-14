@@ -22,3 +22,18 @@
 	font-weight: bold;
 	color: rgb(62, 0, 238);;
 }
+
+/* Hauteur libre : sur mobile le date picker passe sous le sélecteur de
+   période et doit rester dans le bandeau blanc. */
+.site-header {
+	height: auto;
+	line-height: normal;
+	padding: 12px 50px;
+	background: white;
+}
+
+@media (max-width: 768px) {
+	.site-header {
+		padding: 8px;
+	}
+}

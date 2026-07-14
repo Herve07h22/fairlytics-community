@@ -17,8 +17,6 @@ const contentStyle = {
   marginRight: "auto",
 };
 
-const headerStyle = { background: "white" };
-
 const Analytics: React.FC<{ fairlyticsKey: string }> = ({ fairlyticsKey }) => {
   const {
     dashboardState,
@@ -36,7 +34,7 @@ const Analytics: React.FC<{ fairlyticsKey: string }> = ({ fairlyticsKey }) => {
 
   return (
     <>
-      <Header style={headerStyle}>
+      <Header className="site-header">
         <FairlyticsHeader
           period={period}
           setPeriod={setPeriod}

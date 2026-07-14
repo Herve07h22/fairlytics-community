@@ -1,16 +1,12 @@
 /** @type {import('next').NextConfig} */
 
-const path = require("path");
 const webpack = require("webpack");
 
 const nextConfig = {
   reactStrictMode: true,
   output: "standalone",
   swcMinify: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-  },
-  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  pageExtensions: ["ts", "tsx", "js", "jsx"],
   webpack: (config) => {
     // Moment (dépendance du DatePicker d'antd) embarque ses 130 locales par défaut.
     // On ne garde que celles importées explicitement, soit "fr".
@@ -24,14 +20,4 @@ const nextConfig = {
   },
 };
 
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-    // If you use `MDXProvider`, uncomment the following line.
-    // providerImportSource: "@mdx-js/react",
-  },
-});
-
-module.exports = withMDX(nextConfig);
+module.exports = nextConfig;

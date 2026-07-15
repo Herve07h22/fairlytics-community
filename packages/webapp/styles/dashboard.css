@@ -32,8 +32,64 @@
 	background: white;
 }
 
+/* Sur mobile, le header s'organise en deux colonnes : le logo à gauche, les
+   contrôles à droite. */
 @media (max-width: 768px) {
 	.site-header {
 		padding: 8px;
+	}
+	/* On garde les deux colonnes sur une seule ligne (la Row d'antd retourne
+	   à la ligne par défaut) et on les étire sur toute la hauteur. */
+	.site-header .ant-row {
+		flex-wrap: nowrap;
+		align-items: stretch;
+	}
+	/* Colonne de gauche : largeur fixe (grille antd) assez large pour le logo, qui
+	   y est centré. Conteneur flex pour propager la hauteur de la ligne au contenu
+	   par étirement (un pourcentage ne se résoudrait pas, aucun ancêtre n'ayant de
+	   hauteur explicite). On masque le libellé "Fairlytics". */
+	.site-header-logo-col {
+		display: flex;
+		justify-content: center;
+	}
+	.site-header-logo {
+		align-items: stretch;
+	}
+	.site-header-logo-text {
+		display: none;
+	}
+	/* Le SVG s'étire à la hauteur de la ligne (largeur automatique via son ratio),
+	   donc carré et aussi haut que le bloc boutons + date picker. */
+	.site-header-logo svg {
+		display: block;
+		height: auto;
+		width: auto;
+		aspect-ratio: 1 / 1;
+	}
+	/* Colonne de droite : boutons et date picker empilés sur toute sa largeur,
+	   donc de même largeur, les trois boutons se la répartissant. */
+	.site-header-controls-col {
+		min-width: 0;
+	}
+	.period-selector {
+		width: 100%;
+	}
+	.period-selector .ant-space-item {
+		width: 100%;
+		min-width: 0;
+	}
+	.period-selector .ant-radio-group {
+		display: flex;
+		width: 100%;
+		min-width: 0;
+	}
+	.period-selector .ant-radio-button-wrapper {
+		flex: 1 1 0;
+		min-width: 0;
+		text-align: center;
+	}
+	.period-selector .ant-picker {
+		width: 100%;
+		min-width: 0;
 	}
 }

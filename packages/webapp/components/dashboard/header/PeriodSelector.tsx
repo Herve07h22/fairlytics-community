@@ -17,7 +17,7 @@ const PeriodSelector: React.FC<{
   setPeriod: (p: Period) => void;
 }> = ({ period, setPeriod }) => {
   return (
-    <Space wrap>
+    <Space wrap className="period-selector">
       <Radio.Group
         value={period.preset}
         onChange={(e) => {

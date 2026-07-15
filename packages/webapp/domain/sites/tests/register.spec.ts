@@ -1,22 +1,30 @@
+import { ConsoleEmailService } from "adapters/inMemory/ConsoleEmailService";
+import { InMemorySecureKeyRepository } from "adapters/inMemory/InMemorySecureKeyRepository";
 import { KeyAlreadyExistsError } from "../errors/KeyAlreadyExistError";
-import { EmailService } from "../interfaces/EmailService";
 import { RandomGenerator } from "../interfaces/RandomGenerator";
 import { SecureKeyRepository } from "../interfaces/SecureKeyRepository";
 import { register } from "../usecases/register";
-import { EmailServiceTest } from "./EmailServiceTest";
 import { RandomGeneratorTest } from "./RandomGeneratorTest";
-import { SecureKeyRepositoryTest } from "./SecureKeyRepositoryTest";
 
 var dependencies: {
   secureKeyRepository: SecureKeyRepository;
-  emailService: EmailServiceTest;
+  emailService: ConsoleEmailService;
   randomGenerator: RandomGenerator;
 };
 
 beforeAll(() => {
   dependencies = {
-    secureKeyRepository: new SecureKeyRepositoryTest(),
-    emailService: new EmailServiceTest(),
+    // On seede explicitement le dépôt plutôt que de laisser l'adapter tomber sur
+    // son store global partagé, pour que ces cas restent isolés.
+    secureKeyRepository: new InMemorySecureKeyRepository([
+      {
+        privateKey: "private1",
+        publicKey: "public1",
+        email: "already-registered@test.test",
+      },
+      { privateKey: "private2", publicKey: "public2", email: null },
+    ]),
+    emailService: new ConsoleEmailService(),
     randomGenerator: new RandomGeneratorTest("xxx", "yyy"),
   };
 });

@@ -11,16 +11,22 @@ const FairlyticsHeader: React.FC<{
   setPeriod: (p: Period) => void;
 }> = ({ loading, period, setPeriod }) => {
   return (
-    <Row justify="space-between" style={{ margin: "auto", maxWidth: "1200px" }}>
-      <Col xs={0} md={4}>
+    <Row
+      align="middle"
+      justify="space-between"
+      style={{ margin: "auto", maxWidth: "1200px" }}
+    >
+      <Col xs={5} md={4} className="site-header-logo-col">
         <div className="site-header-logo">
           <Logo />
           <Link href="/">
-            <div>&nbsp;{loading ? <Spin /> : "Fairlytics"}</div>
+            <div className="site-header-logo-text">
+              &nbsp;{loading ? <Spin /> : "Fairlytics"}
+            </div>
           </Link>
         </div>
       </Col>
-      <Col xs={24} md={18} xl={16}>
+      <Col xs={19} md={18} xl={16} className="site-header-controls-col">
         <PeriodSelector period={period} setPeriod={setPeriod} />
       </Col>
     </Row>
